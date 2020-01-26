@@ -20,9 +20,26 @@ body {
 }
 
 .enter-button {
-    margin-top: 75vh;
-    height: 75px;
-    width: 175px;
-    font-size: 25px;
+    margin-top: 65vh;
+    height: 70px;
+    width: 150px;
+    font-size: 24px;
     border-radius: 10px;
+}
+
+.logo-container {
+    max-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+}
+
+.welcome {
+    color: #253D60;
+}
+
+.landing-logo {
+    max-height: 75px;
+    width: auto;
 }
