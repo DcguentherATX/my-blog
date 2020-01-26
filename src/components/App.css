@@ -2,6 +2,8 @@ body {
     margin: 0;
 }
 
+/* <------------ Landing Page ------------> */
+
 .landing-page {
     height: 100vh;
     width: 100vw; 
@@ -41,5 +43,20 @@ body {
 
 .landing-logo {
     max-height: 75px;
+    width: auto;
+}
+
+/* <------------ Navigation ------------> */
+
+.navigation {
+    color: #EFF6EE;
+    background-color: #16072D;
+}
+
+.hamburger {
+    color: #16072D;
+    background-color: #EFF6EE;
+    border-radius: 50%;
+    max-height: 70px;
     width: auto;
 }
