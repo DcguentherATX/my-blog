@@ -11,3 +11,18 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+.button-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.enter-button {
+    margin-top: 75vh;
+    height: 75px;
+    width: 175px;
+    font-size: 25px;
+    border-radius: 10px;
+}
