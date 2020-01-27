@@ -73,10 +73,12 @@ body {
 
 .about {
     background-color: #EFF6EE;
+    padding-bottom: 35px;
 }
 
 .about-container {
-    padding: 50px 20px
+    padding: 50px 20px;
+    margin: 0 50px;
 }
 
 .about-row {
@@ -87,4 +89,31 @@ body {
     max-height: 500px;
     width: auto;
     padding-bottom: 20px;
+}
+
+/* <------------ Footer ------------> */
+
+.footer-container {
+    color: #EFF6EE;
+    background-color: #16072D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-right: 20px;
+    height: 75px;
+}
+
+.built-by {
+    padding-left: 20px;
+}
+
+.social-logo {
+    height: 40px;
+    margin: 5px 10px;
+}
+
+.insta {
+    border-radius: 50%;
+    background-color: #EFF6EE;
 }
