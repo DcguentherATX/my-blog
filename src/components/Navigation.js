@@ -18,7 +18,7 @@ const Navigation = () => {
             src={logo}
             width="auto"
             height="70"
-            className="d-inline-block align-top"
+            className="d-inline-block align-top nav-logo"
           />{' '}
         </Navbar.Brand>
       </Navbar>
