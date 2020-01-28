@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Welcome from './Welcome';
 import Button from 'react-bootstrap/Button';
 import logo from '../../assets/images/logo-blue-cream.png';
 
@@ -10,7 +12,7 @@ const LandingPage = () => {
                 <img src={logo} className="landing-logo" />
             </div>
             <div className="button-container">
-                <Button className="enter-button" variant="outline-light">Enter</Button>
+                <Link to="/welcome"><Button className="enter-button" variant="outline-light">Enter</Button></Link>
             </div>
         </div>
     )
