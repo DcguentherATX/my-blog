@@ -85,10 +85,20 @@ body {
     height: 1fr;
 }
 
+.blurb-left {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .male-model {
     max-height: 500px;
     width: auto;
     padding-bottom: 20px;
+}
+
+.about-info {
+    flex-wrap: wrap;
 }
 
 /* <------------ Footer ------------> */

@@ -10,7 +10,8 @@ import './App.css';
 const App = () => {
     return (
         <>
-        <Router>
+        <Welcome />
+        {/* <Router>
             <Switch>
                 <Route path="/" component={LandingPage} exact>
                     <LandingPage />
@@ -19,7 +20,7 @@ const App = () => {
                     <Welcome />
                 </Route>
             </Switch>
-        </Router>
+        </Router> */}
         </>
     )
 }
