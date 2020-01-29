@@ -11,7 +11,6 @@ import Footer from './Footer';
 const Welcome = () => {
     return (
         <>
-            <Navigation />
             <div>
                 <Switch>
                     <Route path="/welcome" component={About}></Route>
@@ -21,7 +20,6 @@ const Welcome = () => {
                     <Route path="/blog" component={Blog}></Route>
                 </Switch>
             </div>
-            <Footer />
         </>
     )
 }

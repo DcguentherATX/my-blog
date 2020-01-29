@@ -2,11 +2,16 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Navigation from './Navigation';
+import Footer from './Footer';
 import blurb from '../../assets/images/blurb.png';
 import model from '../../assets/images/model.jpg';
 
 const About = () => {
     return (
+        <>
+        <Navigation />
+
     <div className="about">
         <Container className="about-container">
             <Row className="about-row">
@@ -32,6 +37,8 @@ const About = () => {
             </Row>
         </Container>
     </div>
+    <Footer />
+    </>
     )
 }
 
