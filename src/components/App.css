@@ -65,13 +65,15 @@ body {
     margin-right: 5px;
 }
 
+/* <------------ Navigation Dropdown ------------> */
+
 .dropdown-menu {
     background-color: #EFF6EE;
 }
 
 .drop:hover {
     color: #EFF6EE;
-    background-color: #253D60
+    background-color: #253D60;
 }
 
 .dropdown-toggle {
@@ -95,6 +97,10 @@ body {
     background-color:transparent;
 }
 
+.dropdown-item:hover {
+    color: #EFF6EE !important;
+}
+
 .show>.btn-primary.dropdown-toggle {
     color: transparent;
     background-color:transparent;
@@ -105,9 +111,9 @@ body {
     box-shadow: none;
 }
 
-/* <------------ Navigation Dropdown ------------> */
-
-
+.dropdown-item.active {
+    display: none;
+}
 
 /* <------------ About ------------> */
 
@@ -140,6 +146,14 @@ body {
 .about-info {
     color: #253D60;
 }
+
+/* <------------ Gallery ------------> */
+
+.gallery {
+    background-color: #EFF6EE;
+}
+
+
 
 /* <------------ Footer ------------> */
 

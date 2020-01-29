@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown';
@@ -10,16 +11,16 @@ const Navigation = () => {
         <div className="navigation">
         <Navbar className="navbar" sticky="top" expand="true" >
         <DropdownButton className="nav-dropdown"
-                        alignLeft
                         title={
                             <img className="hamburger" src={hamburger}></img>
                         }
-                        id="dropdown-menu-align-right"
+                        id="dropdown-menu-align-left"
                     >
-                        <Dropdown.Item className="drop" eventKey="1" value="beach">Gallery</Dropdown.Item>
-                        <Dropdown.Item className="drop" eventKey="2" value="architecture">Destinations</Dropdown.Item>
-                        <Dropdown.Item className="drop" eventKey="3" value="doorways" >Dining</Dropdown.Item>
-                        <Dropdown.Item className="drop" eventKey="4" value="all" >Blog</Dropdown.Item>
+                        <Dropdown.Item as={NavLink} to="/welcome" className="drop" eventKey="1" value="about">About</Dropdown.Item>
+                        <Dropdown.Item as={NavLink} to="/gallery" className="drop" eventKey="2" value="gallery">Gallery</Dropdown.Item>
+                        <Dropdown.Item as={NavLink} to="/destinations" className="drop" eventKey="3" value="destinations">Destinations</Dropdown.Item>
+                        <Dropdown.Item as={NavLink} to="/dining" className="drop" eventKey="4" value="dining" >Dining</Dropdown.Item>
+                        <Dropdown.Item as={NavLink} to="/blog" className="drop" eventKey="5" value="blog" >Blog</Dropdown.Item>
                     </DropdownButton>
             {/* <div className="nav-dropdown">
                 <img className="hamburger" src={hamburger} />
