@@ -1,7 +1,18 @@
 import React from 'react';
 import Navigation from './Navigation';
 import Footer from './Footer';
-import model from '../../assets/images/model.jpg';
+
+import iceland from '../../assets/images/iceland.jpg';
+import mountain from '../../assets/images/mountain.jpg';
+import beach from '../../assets/images/beach.jpg';
+import alexanderplatz from '../../assets/images/alexanderplatz.jpg';
+import brooklyn from '../../assets/images/brooklyn-bridge.jpg';
+import tokyo from '../../assets/images/tokyo.jpg';
+import vespa from '../../assets/images/vespa.jpg';
+import cactus from '../../assets/images/cactus.jpg';
+import cartagena from '../../assets/images/cartagena.jpg';
+import thailand from '../../assets/images/thailand.jpg'
+
 
 const Gallery = () => {
     return (
@@ -18,7 +29,36 @@ const Gallery = () => {
                 </div>
                 <div className="gallery-container">
                     <div className="gallery-grid">
-                        <img src={model} />
+                        <div className="r1c1">
+                            <img className="gal-img" src={iceland} alt="iceland"/>
+                        </div>
+                        <div className="r1c3">
+                            <img className="gal-img" src={alexanderplatz} alt="image"/>
+                        </div>
+                        <div className="r1c4">
+                            <img className="gal-img" src={beach} alt="image"/>
+                        </div>
+                        <div className="r2c3">
+                            <img className="gal-img" src={thailand} alt="image"/>
+                        </div>
+                        <div className="r2c4">
+                            <img className="gal-img" src={tokyo} alt="image"/>
+                        </div>
+                        <div className="r3c1">
+                            <img className="gal-img" src={cartagena} alt="image"/>
+                        </div>
+                        <div className="r3c2">
+                            <img className="gal-img" src={cactus} alt="image"/>
+                        </div>
+                        <div className="r3c3">
+                            <img className="gal-img" src={brooklyn} alt="image"/>
+                        </div>
+                        <div className="r4c1">
+                            <img className="gal-img" src={mountain} alt="image"/>
+                        </div>
+                        <div className="r4c2">
+                            <img className="gal-img" src={vespa} alt="image"/>
+                       </div>
                     </div>
                 </div>
             </div>
