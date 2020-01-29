@@ -2,7 +2,8 @@ module.exports = {
     entry: __dirname + "/src",
     output: {
       filename: "bundle.js",
-      path: __dirname + '/public'
+      path: __dirname + '/public',
+      publicPath: '/'
     },
     module: {
       rules: [
@@ -28,5 +29,5 @@ module.exports = {
           }]
       }
       ]
-    },
+    }
   };

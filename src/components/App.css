@@ -315,6 +315,41 @@ body {
     }
 }
 
+/* <------------ Destinations ------------> */
+
+.search-container {
+    color: #253D60;
+    background-color: #EFF6EE;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.label {
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.dest-main-container {
+    padding: 30px;
+}
+
+.dest-main-image {
+    max-width: 400px;
+    height: auto;
+}
+
+.dest-img-info {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 
 /* <------------ Footer ------------> */
 
