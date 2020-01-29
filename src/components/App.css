@@ -38,6 +38,7 @@ body {
 
 .welcome {
     color: #253D60;
+    padding-left: 15vw;
 }
 
 .landing-logo {
@@ -124,7 +125,6 @@ body {
 
 .about-container {
     padding: 50px 20px;
-    margin: 0 50px;
 }
 
 .about-row {
@@ -145,6 +145,7 @@ body {
 
 .about-info {
     color: #253D60;
+    padding: 30px;
 }
 
 /* <------------ Gallery ------------> */
@@ -153,13 +154,17 @@ body {
     background-color: #EFF6EE;
 }
 
+/* .page-title {
+    color: #FFFD77;
+} */
+
 .top-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #EFF6EE;
     background-color: #253D60;
-    padding: 30px 5px;
+    padding: 30px;
 }
 
 .info-container {

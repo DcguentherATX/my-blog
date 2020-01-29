@@ -25,7 +25,7 @@ const Navigation = () => {
             {/* <div className="nav-dropdown">
                 <img className="hamburger" src={hamburger} />
             </div> */}
-            <div>DCG Blog</div>
+            <h1>DCG Blog</h1>
         <Navbar.Brand href="#home">
           <img
             alt="dcg-logo"

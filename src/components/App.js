@@ -12,8 +12,7 @@ import './App.css';
 const App = () => {
     return (
         <>
-        <Gallery />
-        {/* <Router>
+        <Router>
             <Switch>
                 <Route path="/" component={LandingPage} exact />
                 <Route path="/welcome" component={Welcome} exact />
@@ -23,7 +22,7 @@ const App = () => {
                 <Route path="/dining" component={Dining} exact></Route>
                 <Route path="/blog" component={Blog} exact></Route>
             </Switch>
-        </Router> */}
+        </Router>
         </>
     )
 }
