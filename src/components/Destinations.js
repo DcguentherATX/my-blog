@@ -11,6 +11,12 @@ const Destinations = () => {
         artist: 'Pablo Rodriguez'
     })
     
+    const [searchTerm, setSearchTerm] = useState('');
+    const handleChange = (e) => {
+
+        setSearchTerm(e.target.value);
+    }
+    
     return (
         <>
             <Navigation />
@@ -28,7 +34,7 @@ const Destinations = () => {
                         <label className="label">
                             Search:
                         </label>
-                        <input type="text" placeholder="search" />
+                        <input type="text" value={searchTerm} onChange={handleChange} placeholder="search" />
                     </div>
                     <div className="dest-main-container">
                         <img className="dest-main-image" src={mainImage.image } alt="cartagena" />
