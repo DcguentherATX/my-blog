@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
 import cartagena from '../../assets/images/cartagena.jpg';
 
 const Destinations = () => {
+    const [mainImage, setMainImage] = useState({
+        image: cartagena,
+        likes: 5,
+        artist: 'Pablo Rodriguez'
+    })
+    
     return (
         <>
             <Navigation />
@@ -25,9 +31,9 @@ const Destinations = () => {
                         <input type="text" placeholder="search" />
                     </div>
                     <div className="dest-main-container">
-                        <img className="dest-main-image" src={cartagena} alt="cartagena" />
+                        <img className="dest-main-image" src={mainImage.image } alt="cartagena" />
                         <div className="dest-img-info">
-                            <div>Likes</div><div>Artist</div>
+                            <div>Likes: {mainImage.likes} </div><div>Artist: {mainImage.artist}</div>
                         </div>
                     </div>
                 </div>
