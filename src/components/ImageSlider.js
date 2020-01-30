@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import CarouselItem from './CarouselItem';
 
 import vespa from '../../assets/images/vespa.jpg';
 
 export default class ImageSlider extends Component {
-    render() {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    // console.log(this.props);
       const settings = {
         dots: true,
         infinite: true,
@@ -17,7 +23,8 @@ export default class ImageSlider extends Component {
         <div>
           <h2> Images </h2>
           <Slider {...settings}>
-            <div>
+            {this.props.carouselImages.map((carouselImage, index) => <CarouselItem key={index} item={carouselImage}/>)}
+            {/* <div>
               <img className="slider-image" src={vespa} />
             </div>
             <div>
@@ -43,7 +50,7 @@ export default class ImageSlider extends Component {
             </div>
             <div>
               <img className="slider-image" src={vespa} />
-            </div>
+            </div> */}
           </Slider>
         </div>
       );

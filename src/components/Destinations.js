@@ -4,6 +4,8 @@ import ImageSlider from './ImageSlider';
 import Footer from './Footer';
 
 import cartagena from '../../assets/images/cartagena.jpg';
+import vespa from '../../assets/images/vespa.jpg';
+
 
 const Destinations = () => {
     const [mainImage, setMainImage] = useState({
@@ -11,6 +13,18 @@ const Destinations = () => {
         likes: 5,
         artist: 'Pablo Rodriguez'
     })
+
+    const [carouselImages, setCarouselImages] = useState([
+        {img: vespa},
+        {img: vespa},
+        {img: vespa},
+        {img: vespa},
+        {img: vespa},
+        {img: vespa},
+        {img: vespa},
+        {img: vespa},
+        {img: vespa},
+    ])
     
     const [searchTerm, setSearchTerm] = useState('');
     const handleChange = (e) => {
@@ -45,7 +59,7 @@ const Destinations = () => {
                 </div>
             </div>
             <div className="slider-container">
-                <ImageSlider />
+                <ImageSlider carouselImages={carouselImages}/>
             </div>
             <Footer />
         </>
