@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navigation from './Navigation';
 import ImageSlider from './ImageSlider';
 import Footer from './Footer';
+import Axios from 'axios';
 
 import cartagena from '../../assets/images/cartagena.jpg';
 import vespa from '../../assets/images/vespa.jpg';
@@ -23,12 +24,20 @@ const Destinations = () => {
         {img: vespa},
         {img: vespa},
         {img: vespa},
-        {img: vespa},
+        {img: vespa}
     ])
     
     const [searchTerm, setSearchTerm] = useState('');
     const handleChange = (e) => {
         setSearchTerm(e.target.value);
+    }
+
+    const handleSubmit = () => {
+        Axios.get('/images', {
+            params: {
+                term: searchTerm
+            }
+        })
     }
     
     return (
@@ -49,6 +58,7 @@ const Destinations = () => {
                             Search:
                         </label>
                         <input type="text" value={searchTerm} onChange={handleChange} placeholder="search" />
+                        <button onClick={handleSubmit}>Submit</button>
                     </div>
                     <div className="dest-main-container">
                         <img className="dest-main-image" src={mainImage.image } alt="cartagena" />
