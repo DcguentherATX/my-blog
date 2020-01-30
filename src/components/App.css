@@ -356,11 +356,26 @@ body {
 .slider-container {
     color: #253D60;
     background-color: #EFF6EE;
+    padding: 40px 75px 80px 75px;
+}
+
+.slider-title {
+    padding: 30px 0;
+    text-align: center;
 }
 
 .slider-image {
-    max-width: 250px;
-    height: auto;
+    max-width: 400px;
+    max-height: 250px;
+}
+
+.carousel-img {
+    display: flex;
+    justify-content: center;
+}
+
+.slick-next:before, .slick-prev:before {
+    color: #253D60;
 }
 
 /* <------------ Footer ------------> */
