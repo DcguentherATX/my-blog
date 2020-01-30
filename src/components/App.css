@@ -351,6 +351,18 @@ body {
     justify-content: space-between;
 }
 
+/* <------------ Slider ------------> */
+
+.slider-container {
+    color: #253D60;
+    background-color: #EFF6EE;
+}
+
+.slider-image {
+    max-width: 250px;
+    height: auto;
+}
+
 /* <------------ Footer ------------> */
 
 .footer-container {

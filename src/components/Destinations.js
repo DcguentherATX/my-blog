@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navigation from './Navigation';
+import ImageSlider from './ImageSlider';
 import Footer from './Footer';
 
 import cartagena from '../../assets/images/cartagena.jpg';
@@ -13,7 +14,6 @@ const Destinations = () => {
     
     const [searchTerm, setSearchTerm] = useState('');
     const handleChange = (e) => {
-
         setSearchTerm(e.target.value);
     }
     
@@ -43,6 +43,9 @@ const Destinations = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="slider-container">
+                <ImageSlider />
             </div>
             <Footer />
         </>
