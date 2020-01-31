@@ -9,6 +9,8 @@ import vespa from '../../assets/images/vespa.jpg';
 
 
 const Destinations = () => {
+    // initialize state
+
     const [mainImage, setMainImage] = useState({
         image: cartagena,
         likes: 5,
@@ -28,15 +30,40 @@ const Destinations = () => {
     ])
     
     const [searchTerm, setSearchTerm] = useState('');
+
+    // converts api response to match state
+
+    const mapResults = (photos) => {
+        let updated = [];
+        // console.log('in mapResults', photos);
+
+        photos.forEach((photo) => {
+            let pic = photo.urls.small;
+            updated.push({ img: pic });
+        })
+        return updated;
+    }
+
+    // event handlers
+
     const handleChange = (e) => {
         setSearchTerm(e.target.value);
     }
 
     const handleSubmit = () => {
-        Axios.get('/images', {
+        console.log('term', searchTerm)
+        Axios.get('https://api.unsplash.com/search/photos', {
             params: {
-                term: searchTerm
+                query: searchTerm
+            },
+            headers: {
+                Authorization: ''
             }
+        })
+        .then((response) => {
+            const res = (response.data.results);
+            let newPhotos = mapResults(res);
+            setCarouselImages(newPhotos);
         })
     }
     
@@ -58,7 +85,7 @@ const Destinations = () => {
                             Search:
                         </label>
                         <input type="text" value={searchTerm} onChange={handleChange} placeholder="search" />
-                        <button onClick={handleSubmit}>Submit</button>
+                        <button onClick={(searchTerm) => handleSubmit(searchTerm)}>Submit</button>
                     </div>
                     <div className="dest-main-container">
                         <img className="dest-main-image" src={mainImage.image } alt="cartagena" />
