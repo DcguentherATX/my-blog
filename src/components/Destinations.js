@@ -12,9 +12,9 @@ const Destinations = () => {
     // initialize state
 
     const [mainImage, setMainImage] = useState({
-        image: cartagena,
-        likes: 5,
-        artist: 'Pablo Rodriguez'
+        img: cartagena,
+        // likes: 5,
+        // artist: 'Pablo Rodriguez'
     })
 
     const [carouselImages, setCarouselImages] = useState([
@@ -51,7 +51,7 @@ const Destinations = () => {
     }
 
     const handleSubmit = () => {
-        console.log('term', searchTerm)
+        // console.log('term', searchTerm)
         Axios.get('https://api.unsplash.com/search/photos', {
             params: {
                 query: searchTerm
@@ -64,6 +64,7 @@ const Destinations = () => {
             const res = (response.data.results);
             let newPhotos = mapResults(res);
             setCarouselImages(newPhotos);
+            setMainImage(newPhotos[0]);
         })
     }
     
@@ -88,10 +89,10 @@ const Destinations = () => {
                         <button onClick={(searchTerm) => handleSubmit(searchTerm)}>Submit</button>
                     </div>
                     <div className="dest-main-container">
-                        <img className="dest-main-image" src={mainImage.image } alt="cartagena" />
-                        <div className="dest-img-info">
+                        <img className="dest-main-image" src={mainImage.img } alt="cartagena" />
+                        {/* <div className="dest-img-info">
                             <div>Likes: {mainImage.likes} </div><div>Artist: {mainImage.artist}</div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

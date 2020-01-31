@@ -369,8 +369,9 @@ body {
 }
 
 .slider-image {
-    max-width: 400px;
-    max-height: 250px;
+    max-width: 90%;
+    height: auto;
+    margin: 5px 5px;
 }
 
 .carousel-img {
