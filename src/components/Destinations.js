@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 import Navigation from './Navigation';
 import ImageSlider from './ImageSlider';
 import Footer from './Footer';
@@ -24,9 +25,9 @@ const Destinations = () => {
         {img: vespa},
         {img: vespa},
         {img: vespa},
-        {img: vespa},
-        {img: vespa},
-        {img: vespa}
+        // {img: vespa},
+        // {img: vespa},
+        // {img: vespa}
     ])
     
     const [searchTerm, setSearchTerm] = useState('');
@@ -52,6 +53,7 @@ const Destinations = () => {
 
     const handleSubmit = () => {
         // console.log('term', searchTerm)
+        if (searchTerm) {
         Axios.get('https://api.unsplash.com/search/photos', {
             params: {
                 query: searchTerm
@@ -66,6 +68,12 @@ const Destinations = () => {
             setCarouselImages(newPhotos);
             setMainImage(newPhotos[0]);
         })
+        .catch((err) => {
+            console.log(err);
+        })
+    } else {
+        alert('Please enter a search term');
+    }
     }
     
     return (
@@ -85,9 +93,10 @@ const Destinations = () => {
                         <label className="label">
                             Search:
                         </label>
-                        <input type="text" value={searchTerm} onChange={handleChange} placeholder="search" />
-                        <button onClick={(searchTerm) => handleSubmit(searchTerm)}>Submit</button>
+                        <input className="search" type="text" value={searchTerm} onChange={handleChange} placeholder="search" />
+                        <Button onClick={(searchTerm) => handleSubmit(searchTerm)} variant="primary" >Submit</Button>
                     </div>
+                    <div id="search-error">Please enter search word</div>
                     <div className="dest-main-container">
                         <img className="dest-main-image" src={mainImage.img } alt="cartagena" />
                         {/* <div className="dest-img-info">
