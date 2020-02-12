@@ -39,7 +39,7 @@ const Destinations = () => {
         // console.log('in mapResults', photos);
 
         photos.forEach((photo) => {
-            let pic = photo.urls.small;
+            let pic = photo.image;
             updated.push({ img: pic });
         })
         return updated;
@@ -87,7 +87,11 @@ const Destinations = () => {
                 }
             })
             .then((response) => {
-                console.log(response);
+                const photos = response.data;
+                console.log(photos);
+                const newPhotos = mapResults(photos);
+                setCarouselImages(newPhotos);
+                setMainImage(newPhotos[0]);
             })
             .catch((err) => {
                 console.log(err);

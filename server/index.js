@@ -4,7 +4,7 @@ const port = 3000;
 const bodyParser = require('body-parser');
 const path = require('path');
 const request = require('request');
-const apiurl = 'https://api.unsplash.com/search/photos?page=1&query=mirror&client_id=';
+const clientId = '';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,13 +15,26 @@ app.use('/', express.static('public'));
 app.get('/images', (req, res) => {
     const { term } = req.query;
 
-    request({url:apiurl}, (err, data) => {
+    request({url: `https://api.unsplash.com/search/photos?page=1&query=${term}&client_id=${clientId}`}, (err, response) => {
         if (err) {
             console.log(err);
         } else {
-            var search = JSON.parse(data.body);
-            console.log(JSON.stringify(search.results));
-            res.send(search);
+            const search = JSON.parse(response.body);
+            let photoDetails = [];
+
+            for (let i = 0; i < search.results.length; i++) {
+                let currentPhoto = {};
+
+                currentPhoto.id = search.results[i].id;
+                currentPhoto.alt = search.results[i].alt_description;
+                currentPhoto.image = search.results[i].urls.small;
+                currentPhoto.link = search.results[i].links.html;
+                currentPhoto.likes = search.results[i].likes;
+                currentPhoto.photographer = search.results[i].user.name;
+
+                photoDetails.push(currentPhoto);
+            }
+            res.send(photoDetails);
         }
     })
 });
