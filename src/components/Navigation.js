@@ -16,7 +16,7 @@ const Navigation = () => {
                         }
                         id="dropdown-menu-align-left"
                     >
-                        <Dropdown.Item as={NavLink} to="/welcome" className="drop" eventKey="1" value="about">About</Dropdown.Item>
+                        <Dropdown.Item as={NavLink} to="/about" className="drop" eventKey="1" value="about">About</Dropdown.Item>
                         <Dropdown.Item as={NavLink} to="/gallery" className="drop" eventKey="2" value="gallery">Gallery</Dropdown.Item>
                         <Dropdown.Item as={NavLink} to="/destinations" className="drop" eventKey="3" value="destinations">Destinations</Dropdown.Item>
                         <Dropdown.Item as={NavLink} to="/dining" className="drop" eventKey="4" value="dining" >Dining</Dropdown.Item>

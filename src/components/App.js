@@ -12,18 +12,17 @@ import './App.css';
 const App = () => {
     return (
         <>
-        <Destinations />
-        {/* <Router>
+        <Router>
             <Switch>
                 <Route path="/" component={LandingPage} exact />
-                <Route path="/welcome" component={Welcome} exact />
+                {/* <Route path="/welcome" component={Welcome} exact /> */}
                 <Route path="/about" component={About} exact />
                 <Route path="/gallery" component={Gallery} exact />
                 <Route path="/destinations" component={Destinations} exact></Route>
                 <Route path="/dining" component={Dining} exact></Route>
                 <Route path="/blog" component={Blog} exact></Route>
             </Switch>
-        </Router> */}
+        </Router>
         </>
     )
 }

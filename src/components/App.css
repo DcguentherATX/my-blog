@@ -386,6 +386,7 @@ body {
 .carousel-img {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .slick-next:before, .slick-prev:before {
