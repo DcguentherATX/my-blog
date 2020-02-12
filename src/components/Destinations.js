@@ -59,7 +59,7 @@ const Destinations = () => {
                 query: searchTerm
             },
             headers: {
-                Authorization: ''
+                Authorization: 'Client-ID 3714059954197d1c01cc6518097586cdb2aecf54601752e261d1a07938d75f37'
             }
         })
         .then((response) => {
