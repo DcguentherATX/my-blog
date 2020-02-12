@@ -14,8 +14,8 @@ const Destinations = () => {
 
     const [mainImage, setMainImage] = useState({
         img: cartagena,
-        // likes: 5,
-        // artist: 'Pablo Rodriguez'
+        likes: 5,
+        photographer: 'Pablo Rodriguez'
     })
 
     const [carouselImages, setCarouselImages] = useState([
@@ -40,7 +40,11 @@ const Destinations = () => {
 
         photos.forEach((photo) => {
             let pic = photo.image;
-            updated.push({ img: pic });
+            updated.push({ 
+                img: photo.image,
+                likes: photo.likes,
+                photographer: photo.photographer
+             });
         })
         return updated;
     }
@@ -122,9 +126,9 @@ const Destinations = () => {
                     <div id="search-error">Please enter search word</div>
                     <div className="dest-main-container">
                         <img className="dest-main-image" src={mainImage.img } alt="cartagena" />
-                        {/* <div className="dest-img-info">
-                            <div>Likes: {mainImage.likes} </div><div>Artist: {mainImage.artist}</div>
-                        </div> */}
+                        <div className="dest-img-info">
+                            <div>Likes: {mainImage.likes} </div><div>Photographer: {mainImage.photographer}</div>
+                        </div>
                     </div>
                 </div>
             </div>
