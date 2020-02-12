@@ -50,30 +50,49 @@ const Destinations = () => {
     const handleChange = (e) => {
         setSearchTerm(e.target.value);
     }
+// handleSubmit for on client side
+
+    // const handleSubmit = () => {
+    //     // console.log('term', searchTerm)
+    //     if (searchTerm) {
+    //     Axios.get('https://api.unsplash.com/search/photos', {
+    //         params: {
+    //             query: searchTerm
+    //         },
+    //         headers: {
+    //             Authorization: 'Client-ID'
+    //         }
+    //     })
+    //     .then((response) => {
+    //         const res = (response.data.results);
+    //         let newPhotos = mapResults(res);
+    //         setCarouselImages(newPhotos);
+    //         setMainImage(newPhotos[0]);
+    //     })
+    //     .catch((err) => {
+    //         console.log(err);
+    //     })
+    // } else {
+    //     alert('Please enter a search term');
+    // }
+    // }
+
+    // handleSubmit on server side
 
     const handleSubmit = () => {
-        // console.log('term', searchTerm)
         if (searchTerm) {
-        Axios.get('https://api.unsplash.com/search/photos', {
-            params: {
-                query: searchTerm
-            },
-            headers: {
-                Authorization: 'Client-ID 3714059954197d1c01cc6518097586cdb2aecf54601752e261d1a07938d75f37'
-            }
-        })
-        .then((response) => {
-            const res = (response.data.results);
-            let newPhotos = mapResults(res);
-            setCarouselImages(newPhotos);
-            setMainImage(newPhotos[0]);
-        })
-        .catch((err) => {
-            console.log(err);
-        })
-    } else {
-        alert('Please enter a search term');
-    }
+            Axios.get('/images', {
+                params: {
+                    term: searchTerm
+                }
+            })
+            .then((response) => {
+                console.log(response);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+        }
     }
     
     return (

@@ -11,15 +11,18 @@ import Footer from './Footer';
 const Welcome = () => {
     return (
         <>
+        <Navigation />
             <div>
-                <Switch>
-                    <Route path="/welcome" component={About}></Route>
+                {/* <Switch>
+                    <Route path="/welcome" component={Welcome}></Route>
+                    <Route path="/about" component={About}></Route>
                     <Route path="/gallery" component={Gallery}></Route>
                     <Route path="/destinations" component={Destinations}></Route>
                     <Route path="/dining" component={Dining}></Route>
                     <Route path="/blog" component={Blog}></Route>
-                </Switch>
+                </Switch> */}
             </div>
+            <Footer />
         </>
     )
 }
