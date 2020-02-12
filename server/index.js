@@ -4,7 +4,8 @@ const port = 3000;
 const bodyParser = require('body-parser');
 const path = require('path');
 const request = require('request');
-const clientId = '';
+require('dotenv').config();
+const clientId = process.env.UNSPLASH_ACCESS_KEY;
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
