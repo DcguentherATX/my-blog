@@ -7,7 +7,7 @@ const Restaurant = (props) => {
 
     return (
         <div className="restaurant-card">
-            <Card style={{ width: '18em' }} >
+            <Card style={{ width: '22em' }} >
                 <Card.Img variant="top" src={props.restaurant.img} />
                 <Card.Body>
                     <Card.Title>{props.restaurant.name}</Card.Title>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Navigation from './Navigation';
 import ImageSlider from './ImageSlider';
@@ -13,24 +13,44 @@ const Destinations = () => {
     // initialize state
 
     const [mainImage, setMainImage] = useState({
-        img: cartagena,
-        likes: 5,
-        photographer: 'Pablo Rodriguez'
+        // img: cartagena,
+        // likes: 5,
+        // photographer: 'Pablo Rodriguez'
     })
 
     const [carouselImages, setCarouselImages] = useState([
-        {img: vespa},
-        {img: vespa},
-        {img: vespa},
-        {img: vespa},
-        {img: vespa},
-        {img: vespa},
+        // {img: vespa},
+        // {img: vespa},
+        // {img: vespa},
+        // {img: vespa},
+        // {img: vespa},
+        // {img: vespa},
         // {img: vespa},
         // {img: vespa},
         // {img: vespa}
     ])
     
     const [searchTerm, setSearchTerm] = useState('');
+
+    // set state on first render;
+
+    useEffect(() => {
+        Axios.get('/images', {
+            params: {
+                term: 'umbrellas'
+            }
+        })
+        .then((response) => {
+            const photos = response.data;
+            // console.log(photos);
+            const newPhotos = mapResults(photos);
+            setCarouselImages(newPhotos);
+            setMainImage(newPhotos[0]);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    }, []);
 
     // converts api response to match state
 
@@ -54,32 +74,6 @@ const Destinations = () => {
     const handleChange = (e) => {
         setSearchTerm(e.target.value);
     }
-// handleSubmit for on client side
-
-    // const handleSubmit = () => {
-    //     // console.log('term', searchTerm)
-    //     if (searchTerm) {
-    //     Axios.get('https://api.unsplash.com/search/photos', {
-    //         params: {
-    //             query: searchTerm
-    //         },
-    //         headers: {
-    //             Authorization: 'Client-ID'
-    //         }
-    //     })
-    //     .then((response) => {
-    //         const res = (response.data.results);
-    //         let newPhotos = mapResults(res);
-    //         setCarouselImages(newPhotos);
-    //         setMainImage(newPhotos[0]);
-    //     })
-    //     .catch((err) => {
-    //         console.log(err);
-    //     })
-    // } else {
-    //     alert('Please enter a search term');
-    // }
-    // }
 
     // handleSubmit on server side
 
@@ -92,7 +86,7 @@ const Destinations = () => {
             })
             .then((response) => {
                 const photos = response.data;
-                console.log(photos);
+                // console.log(photos);
                 const newPhotos = mapResults(photos);
                 setCarouselImages(newPhotos);
                 setMainImage(newPhotos[0]);

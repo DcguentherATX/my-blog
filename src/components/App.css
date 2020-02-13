@@ -415,7 +415,10 @@ h1 {
 }
 
 .card {
+    margin-top: 1em;
     padding: 1em;
+    background-color: #253D60F2;
+    color: #EFF6EE;
 }
 
 .card-body {
