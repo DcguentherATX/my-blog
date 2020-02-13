@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import CardDeck from 'react-bootstrap/CardDeck';
 import Restaurant from './Restaurant';
 import Navigation from './Navigation';
 import Footer from './Footer';
@@ -21,7 +22,7 @@ const Dining = () => {
         name: 'Justine\'s',
         img: thailand,
         stars: 3,
-        description: 'Sunt duis incididunt id velit nostrud exercitation ex officia pariatur quis incididunt.'
+        description: 'Sunt duis incididunt id velit nostrud exercitation ex officia.'
     }
     ]);
 
@@ -38,7 +39,9 @@ const Dining = () => {
                     </div>
                 </div>
                 <div className="dining-container">
-                    {restaurants.map((restaurant, index) => <Restaurant restaurant={restaurant} key={index} />)}
+                    <CardDeck className="entire-deck">
+                        {restaurants.map((restaurant, index) => <Restaurant restaurant={restaurant} key={index} />)}
+                    </CardDeck>
                 </div>
             </div>
             <Footer />

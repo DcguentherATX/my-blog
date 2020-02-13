@@ -411,8 +411,15 @@ h1 {
     background-color: #EFF6EE;
     padding: 30px 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding: 1em;
+}
+
+.card-body {
+    padding: 1em;
 }
 
 /* <------------ Footer ------------> */
