@@ -1,10 +1,16 @@
 body {
     margin: 0;
     background-color: #16072D;
+    font-family: 'Catamaran', Arial, Helvetica, sans-serif;
 }
 
 p {
     max-width: 38em;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', Helvetica, Arial, serif;
+    font-weight: 700;
 }
 
 /* <------------ Landing Page ------------> */
