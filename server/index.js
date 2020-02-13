@@ -12,6 +12,17 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/', express.static('public'));
 
+// ensures all names are uniformally capitalized
+
+const standardizeName = (name) => {
+    const updatedName = name.toLowerCase().split(' ');
+    let newName = [];
+   
+    for (let i = 0; i < updatedName.length; i++) {
+        newName.push(updatedName[i][0].toUpperCase() + updatedName[i].slice(1));
+    }
+    return newName.join(' ');
+}
 
 app.get('/images', (req, res) => {
     const { term } = req.query;
@@ -31,7 +42,7 @@ app.get('/images', (req, res) => {
                 currentPhoto.image = search.results[i].urls.small;
                 currentPhoto.link = search.results[i].links.html;
                 currentPhoto.likes = search.results[i].likes;
-                currentPhoto.photographer = search.results[i].user.name;
+                currentPhoto.photographer = standardizeName(search.results[i].user.name);
 
                 photoDetails.push(currentPhoto);
             }

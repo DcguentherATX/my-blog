@@ -5,30 +5,12 @@ import ImageSlider from './ImageSlider';
 import Footer from './Footer';
 import Axios from 'axios';
 
-import cartagena from '../../assets/images/cartagena.jpg';
-import vespa from '../../assets/images/vespa.jpg';
-
-
 const Destinations = () => {
     // initialize state
 
-    const [mainImage, setMainImage] = useState({
-        // img: cartagena,
-        // likes: 5,
-        // photographer: 'Pablo Rodriguez'
-    })
+    const [mainImage, setMainImage] = useState({})
 
-    const [carouselImages, setCarouselImages] = useState([
-        // {img: vespa},
-        // {img: vespa},
-        // {img: vespa},
-        // {img: vespa},
-        // {img: vespa},
-        // {img: vespa},
-        // {img: vespa},
-        // {img: vespa},
-        // {img: vespa}
-    ])
+    const [carouselImages, setCarouselImages] = useState([])
     
     const [searchTerm, setSearchTerm] = useState('');
 
