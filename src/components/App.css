@@ -11,6 +11,7 @@ p {
 h1 {
     font-family: 'Cormorant Garamond', Helvetica, Arial, serif;
     font-weight: 700;
+    letter-spacing: .05em;
 }
 
 /* <------------ Landing Page ------------> */
@@ -401,6 +402,17 @@ h1 {
 
 .slick-next:before, .slick-prev:before {
     color: #253D60;
+}
+
+/* <------------ Dining ------------> */
+
+.dining-container {
+    color: #253D60;
+    background-color: #EFF6EE;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* <------------ Footer ------------> */
