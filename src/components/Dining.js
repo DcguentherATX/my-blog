@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Restaurant from './Restaurant';
 import Navigation from './Navigation';
 import Footer from './Footer';
 
+import thailand from '../../assets/images/thailand.jpg';
+
 const Dining = () => {
+    const [restaurants, setRestaurants] = useState([
+        {name: 'Launderette',
+        img: thailand,
+        stars: 5,
+        description: 'Adipisicing incididunt voluptate et Lorem laboris nisi.'
+    },
+        {name: 'Suerte',
+        img: thailand,
+        stars: 4,
+        description: 'Consectetur reprehenderit consectetur cillum cupidatat.'
+    },
+    {
+        name: 'Justine\'s',
+        img: thailand,
+        stars: 3,
+        description: 'Sunt duis incididunt id velit nostrud exercitation ex officia pariatur quis incididunt.'
+    }
+    ]);
+
     return (
         <>
             <Navigation />
@@ -16,7 +38,7 @@ const Dining = () => {
                     </div>
                 </div>
                 <div className="dining-container">
-                    Hello!
+                    {restaurants.map((restaurant, index) => <Restaurant restaurant={restaurant} key={index} />)}
                 </div>
             </div>
             <Footer />
