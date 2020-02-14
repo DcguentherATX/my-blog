@@ -2,16 +2,28 @@ body {
     margin: 0;
     background-color: #16072D;
     font-family: 'Catamaran', Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 p {
     max-width: 38em;
+    letter-spacing: .1em;
+    hyphens: auto;
 }
 
 h1 {
     font-family: 'Cormorant Garamond', Helvetica, Arial, serif;
     font-weight: 700;
     letter-spacing: .05em;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'Cormorant Garamond', Helvetica, Arial, serif;
+    font-weight: 400;
+    letter-spacing: .03em;
+    font-size: 2.5em;
+    text-align: center;
 }
 
 /* <------------ Landing Page ------------> */
@@ -74,7 +86,7 @@ h1 {
 }
 
 .nav-logo {
-    margin-right: 5px;
+    margin: 0px 10px 0px 60px;
 }
 
 /* <------------ Navigation Dropdown ------------> */
@@ -165,13 +177,17 @@ h1 {
     background-color: #EFF6EE;
 }
 
-/* .page-title {
-    color: #FFFD77;
-} */
+.page-title {
+    padding-bottom: 30px;
+    border-bottom: solid 1px #FFFD77;
+    width: 100%;
+    max-width: 40em;
+}
 
 .top-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: #EFF6EE;
     background-color: #253D60;
@@ -327,6 +343,14 @@ h1 {
 
     .built-by {
         display: none;
+    }
+
+    h2 {
+        text-align: start;
+    }
+
+    p {
+        letter-spacing: .02em;
     }
 }
 
