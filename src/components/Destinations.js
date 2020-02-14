@@ -57,6 +57,10 @@ const Destinations = () => {
         setSearchTerm(e.target.value);
     }
 
+    const handleClick = (index) => {
+        setMainImage(carouselImages[index]);
+    }
+
     // handleSubmit on server side
 
     const handleSubmit = () => {
@@ -109,7 +113,7 @@ const Destinations = () => {
                 </div>
             </div>
             <div className="slider-container">
-                <ImageSlider carouselImages={carouselImages}/>
+                <ImageSlider carouselImages={carouselImages} handleClick={handleClick}/>
             </div>
             <Footer />
         </>

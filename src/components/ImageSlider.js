@@ -8,7 +8,7 @@ export default class ImageSlider extends Component {
   }
 
   render() {
-    // console.log(this.props);
+    // console.log('props', this.props);
       const settings = {
         dots: true,
         infinite: true,
@@ -20,8 +20,8 @@ export default class ImageSlider extends Component {
       return (
         <div>
           <h2 className="slider-title">Images</h2>
-          <Slider {...settings}>
-            {this.props.carouselImages.map((carouselImage, index) => <CarouselItem key={index} item={carouselImage}/>)}
+          <Slider {...settings} className="in-the-slider">
+            {this.props.carouselImages.map((carouselImage, index) => <CarouselItem key={index} index={index} item={carouselImage} handleClick={this.props.handleClick}/>)}
           </Slider>
         </div>
       );

@@ -412,6 +412,11 @@ h2 {
     text-align: center;
 }
 
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
 .slider-image {
     max-width: 90%;
     height: auto;
