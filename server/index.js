@@ -64,6 +64,20 @@ app.get('/restaurants', (req, res) => {
     })
 })
 
+app.get('/cuisine', (req, res) => {
+    const { cuisine } = req.query;
+
+    db.getCuisine({cuisine: cuisine}, (err, data) => {
+        if (err) {
+            console.log(err);
+            res.end();
+        } else {
+            console.log('retrieved', data);
+            res.send(data);
+        }
+    })
+})
+
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, '../public/index.html'), function(err) {
         if (err) {
