@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
+import Button from 'react-bootstrap/Button';
 import Restaurant from './Restaurant';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import Axios from 'axios';
-
-import thailand from '../../assets/images/thailand.jpg';
 
 const Dining = () => {
     const [restaurants, setRestaurants] = useState([]);
@@ -31,6 +30,13 @@ const Dining = () => {
                         <p>Ad sit mollit Lorem mollit sunt ad sunt exercitation. Nostrud aliquip voluptate est do nostrud excepteur culpa elit et consequat id dolor. Minim pariatur sint consequat id. Duis elit ullamco amet elit sit minim fugiat eu nostrud qui cillum.</p>
                         <p>Aliquip exercitation voluptate ea aliquip ipsum enim irure mollit qui dolore duis ex. Magna dolor magna nostrud tempor cillum fugiat. Veniam commodo fugiat fugiat officia et id magna anim veniam ex elit aliquip Lorem. Et ex ex aute laborum dolore reprehenderit et id magna sit qui nisi. Esse sint ipsum et labore exercitation. Fugiat dolor magna sunt anim excepteur laboris adipisicing.</p>
                     </div>
+                </div>
+                <div className="restaurant-button-container">
+                    <Button className="filter-button" variant="outline-light">American</Button>
+                    <Button className="filter-button" variant="outline-light">Asian</Button>
+                    <Button className="filter-button" variant="outline-light">European</Button>
+                    <Button className="filter-button" variant="outline-light">Latin</Button>
+                    <Button className="filter-button" variant="outline-light">BBQ</Button>
                 </div>
                 <div className="dining-container">
                     <CardDeck className="entire-deck">

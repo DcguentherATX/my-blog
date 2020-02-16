@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 const Restaurant = (props) => {
-    console.log(props);
+    // console.log(props);
 
     return (
         <div className="restaurant-card">

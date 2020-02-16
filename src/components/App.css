@@ -465,6 +465,22 @@ h2 {
     justify-content: center;
 }
 
+.restaurant-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.filter-button {
+    color: #EFF6EE;
+    border-color: #EFF6EE;
+}
+
+.filter-button:hover {
+    color: #16072D;
+    background-color: #EFF6EE;
+}
+
 /* <------------ Footer ------------> */
 
 .footer-container {

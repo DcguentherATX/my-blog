@@ -58,7 +58,7 @@ app.get('/restaurants', (req, res) => {
             console.log(err);
             res.end();
         } else {
-            console.log('retrieved', data);
+            // console.log('retrieved', data);
             res.send(data);
         }
     })
