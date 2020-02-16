@@ -23,18 +23,28 @@ const Dining = () => {
         let searchTerm = e.target.getAttribute('value');
         // console.log(searchTerm);
 
-        Axios.get('/cuisine', {
-            params: {
-                cuisine: searchTerm
-            }
-        })
-        .then((response) => {
-            // console.log(response.data);
-            setRestaurants(response.data)
-        })
-        .catch((err) => {
-            console.log(err);
-        })
+        if (searchTerm === 'All') {
+            Axios.get('/restaurants')
+            .then((response) => {
+                setRestaurants(response.data);
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+        } else {
+            Axios.get('/cuisine', {
+                params: {
+                    cuisine: searchTerm
+                }
+            })
+            .then((response) => {
+                // console.log(response.data);
+                setRestaurants(response.data)
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+        }
     }
 
     return (
@@ -50,6 +60,7 @@ const Dining = () => {
                     </div>
                 </div>
                 <div className="restaurant-button-container">
+                    <Button className="filter-button" variant="outline-light" value="All" onClick={handleClick}>All</Button>
                     <Button className="filter-button" variant="outline-light" value="American" onClick={handleClick}>American</Button>
                     <Button className="filter-button" variant="outline-light" value="Asian" onClick={handleClick}>Asian</Button>
                     <Button className="filter-button" variant="outline-light" value="European" onClick={handleClick}>European</Button>
