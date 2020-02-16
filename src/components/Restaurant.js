@@ -1,8 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
+import RestaurantModal from './RestaurantModal'
+
 
 const Restaurant = (props) => {
+
+    const [showModal, setShowModal] = useState(false);
+    const [closeModal, setCloseModal] = useState(false);
+
+    const handleShowModal = () => {
+        setShowModal(true);
+    }
+
+    const handleCloseModal = () => {
+        setShowModal(false);
+    }
+
     // console.log(props);
 
     return (
@@ -15,7 +29,14 @@ const Restaurant = (props) => {
                         <span>{props.restaurant.type}</span>
                         <span>Rating: {props.restaurant.stars}</span>
                     </Card.Text>
-                    <Button variant="primary">More Info</Button>
+                    <Button onClick={handleShowModal} variant="primary">More Info</Button>
+                        <RestaurantModal 
+                            className="restaurant-modal"
+                            show={showModal}
+                            onHide={handleCloseModal}
+                            handleClose={handleCloseModal}
+                            restaurant={props.restaurant}
+                            />
                 </Card.Body>
             </Card>
         </div>
