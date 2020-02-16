@@ -351,6 +351,7 @@ h2 {
 
     p {
         letter-spacing: .02em;
+        line-height: 1.5em;
     }
 }
 
@@ -463,6 +464,11 @@ h2 {
 
 .card-deck {
     justify-content: center;
+}
+
+.restaurant-details {
+    display: flex;
+    flex-direction: column;
 }
 
 .restaurant-button-container {

@@ -11,7 +11,7 @@ const Restaurant = (props) => {
                 <Card.Img variant="top" src={props.restaurant.img} />
                 <Card.Body>
                     <Card.Title>{props.restaurant.name}</Card.Title>
-                    <Card.Text>
+                    <Card.Text className="restaurant-details">
                         <span>{props.restaurant.type}</span>
                         <span>Rating: {props.restaurant.stars}</span>
                     </Card.Text>
