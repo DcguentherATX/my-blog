@@ -61,7 +61,7 @@ h2 {
 
 .welcome {
     color: #253D60;
-    padding-left: 15vw;
+    /* padding-left: 15vw; */
 }
 
 .landing-logo {
@@ -431,6 +431,10 @@ h2 {
     margin: 5px 5px;
 }
 
+.slider-image:hover {
+    cursor: pointer;
+}
+
 .carousel-img {
     display: flex;
     justify-content: center;
@@ -486,6 +490,17 @@ h2 {
     color: #16072D;
     background-color: #EFF6EE;
     border-color: #EFF6EE;
+}
+
+/* <------------ Modal ------------> */
+
+.modal-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.restaurant-info {
+    padding: 20px
 }
 
 /* <------------ Footer ------------> */

@@ -16,7 +16,10 @@
                 </Modal.Header>
 
                 <Modal.Body>
-                    <div>
+                    <div className="modal-img-container">
+                        <img className="modal-img" src={props.restaurant.img} />
+                    </div>
+                    <div className="restaurant-info">
                         {props.restaurant.description}
                     </div>
                 </Modal.Body>
