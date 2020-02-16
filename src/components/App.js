@@ -12,7 +12,7 @@ import './App.css';
 const App = () => {
     return (
         <>
-        <Router>
+        <Router >
             <Switch>
                 <Route path="/" component={LandingPage} exact />
                 {/* <Route path="/welcome" component={Welcome} exact /> */}

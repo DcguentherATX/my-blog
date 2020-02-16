@@ -445,7 +445,7 @@ h2 {
 .dining-container {
     color: #253D60;
     background-color: #EFF6EE;
-    padding: 30px 0;
+    padding: 30px 10px;
     display: flex;
     justify-content: center;
 }
@@ -459,6 +459,10 @@ h2 {
 
 .card-body {
     padding: 1em;
+}
+
+.card-deck {
+    justify-content: center;
 }
 
 /* <------------ Footer ------------> */

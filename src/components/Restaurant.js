@@ -12,8 +12,8 @@ const Restaurant = (props) => {
                 <Card.Body>
                     <Card.Title>{props.restaurant.name}</Card.Title>
                     <Card.Text>
+                        <div>{props.restaurant.cuisine}</div>
                         <div>Rating: {props.restaurant.stars}</div>
-                        <div>{props.restaurant.description}</div>
                     </Card.Text>
                     <Button variant="primary">More Info</Button>
                 </Card.Body>
