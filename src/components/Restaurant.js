@@ -12,8 +12,8 @@ const Restaurant = (props) => {
                 <Card.Body>
                     <Card.Title>{props.restaurant.name}</Card.Title>
                     <Card.Text>
-                        <div>{props.restaurant.type}</div>
-                        <div>Rating: {props.restaurant.stars}</div>
+                        <span>{props.restaurant.type}</span>
+                        <span>Rating: {props.restaurant.stars}</span>
                     </Card.Text>
                     <Button variant="primary">More Info</Button>
                 </Card.Body>

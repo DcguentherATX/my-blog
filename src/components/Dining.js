@@ -21,7 +21,7 @@ const Dining = () => {
 
     const handleClick = (e) => {
         let searchTerm = e.target.getAttribute('value');
-        console.log(searchTerm);
+        // console.log(searchTerm);
 
         Axios.get('/cuisine', {
             params: {
@@ -29,7 +29,7 @@ const Dining = () => {
             }
         })
         .then((response) => {
-            console.log(response.data);
+            // console.log(response.data);
             setRestaurants(response.data)
         })
         .catch((err) => {
