@@ -1,52 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Restaurant from './Restaurant';
 import Navigation from './Navigation';
 import Footer from './Footer';
+import Axios from 'axios';
 
 import thailand from '../../assets/images/thailand.jpg';
 
 const Dining = () => {
-    const [restaurants, setRestaurants] = useState([
-        {name: 'Launderette',
-        img: thailand,
-        cuisine: 'American',
-        stars: 5,
-        description: 'Adipisicing incididunt voluptate et Lorem laboris nisi.'
-    },
-        {name: 'Suerte',
-        img: thailand,
-        cuisine: 'Mexican',
-        stars: 4,
-        description: 'Consectetur reprehenderit consectetur cillum cupidatat.'
-    },
-    {
-        name: 'Justine\'s',
-        img: thailand,
-        cuisine: 'French',
-        stars: 3,
-        description: 'Sunt duis incididunt id velit nostrud exercitation ex officia.'
-    },
-    {name: 'ATX Cocina',
-    img: thailand,
-    cuisine: 'Mexican',
-    stars: 5,
-    description: 'Adipisicing incididunt voluptate et Lorem laboris nisi.'
-    },
-    {name: 'Foreign & Domestic',
-    img: thailand,
-    cuisine: 'American',
-    stars: 4,
-    description: 'Consectetur reprehenderit consectetur cillum cupidatat.'
-},
-{
-    name: 'Vixen\'s Wedding',
-    img: thailand,
-    cuisine: 'Indian',
-    stars: 3,
-    description: 'Sunt duis incididunt id velit nostrud exercitation ex officia.'
-}
-    ]);
+    const [restaurants, setRestaurants] = useState([]);
+
+    useEffect(() => {
+        Axios.get('/restaurants')
+        .then((response) => {
+            setRestaurants(response.data);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    })
 
     return (
         <>

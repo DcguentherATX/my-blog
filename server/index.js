@@ -6,6 +6,7 @@ const path = require('path');
 const request = require('request');
 require('dotenv').config();
 const clientId = process.env.UNSPLASH_ACCESS_KEY;
+const db = require('../database/index.js');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -50,6 +51,18 @@ app.get('/images', (req, res) => {
         }
     })
 });
+
+app.get('/restaurants', (req, res) => {
+    db.getRestaurants({}, (err, data) => {
+        if (err) {
+            console.log(err);
+            res.end();
+        } else {
+            console.log('retrieved', data);
+            res.send(data);
+        }
+    })
+})
 
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, '../public/index.html'), function(err) {

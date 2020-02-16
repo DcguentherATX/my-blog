@@ -26,6 +26,16 @@ const seedDatabase = (data) => {
     })
 }
 
-seedDatabase(restaurants);
+const getRestaurants = (obj, cb) => {
+    Restaurants.find(obj, (err, restaurants) => {
+        if (err) {
+            console.log('error reading db', err);
+        } else {
+            cb(null, restaurants);
+        }
+    })
+}
 
-module.exports = { seedDatabase };
+// seedDatabase(restaurants);
+
+module.exports = { getRestaurants };
