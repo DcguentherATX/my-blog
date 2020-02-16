@@ -3,27 +3,31 @@
         "name": "Launderette",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
         "cuisine": "American",
+        "type": "American",
         "stars": 5,
         "description": "Adipisicing incididunt voluptate et Lorem laboris nisi."
 },
 {
     "name": "Suerte",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
-    "cuisine": "Mexican",
+    "cuisine": "Latin",
+    "type": "Mexican",
     "stars": 4,
     "description": "Aliquip reprehenderit ad cillum anim sit. Et aliquip elit cupidatat ullamco commodo cupidatat anim occaecat mollit duis. Laboris irure reprehenderit nisi ullamco mollit ipsum. Et qui culpa labore dolor id anim cupidatat deserunt consectetur dolore ut id proident. Dolor sit duis irure aute sunt. Nisi duis sint dolor ullamco amet consequat ut labore sunt quis et id."
 },
 {
     "name": "Justine's",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
-    "cuisine": "French",
+    "cuisine": "European",
+    "type": "French",
     "stars": 3,
     "description": "Excepteur commodo voluptate in non excepteur amet dolore."
 },
 {
     "name": "ATX Cocina",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
-    "cuisine": "Mexican",
+    "cuisine": "Latin",
+    "type": "Mexican",
     "stars": 5,
     "description": "Minim officia aliquip fugiat occaecat minim incididunt cupidatat id pariatur in amet. Fugiat elit velit laboris aute est eiusmod qui quis sunt non non amet ad cillum. Proident proident ea nostrud laboris sit qui quis ut excepteur nisi."
 },
@@ -31,13 +35,15 @@
     "name": "Foreign & Domestic",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
     "cuisine": "American",
+    "type": "American",
     "stars": 4,
     "description": "Adipisicing incididunt voluptate et Lorem laboris nisi."
 },
 {
     "name": "Vixen's Wedding",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
-    "cuisine": "Indian",
+    "cuisine": "Asian",
+    "type": "Indian",
     "stars": 3,
     "description": "Lorem incididunt ea excepteur excepteur ut proident eiusmod aute. In aute ipsum dolor ea incididunt ex eiusmod dolore id aliqua do aliqua. Sit dolore quis do nisi nisi minim et laboris excepteur enim enim exercitation excepteur. Irure id pariatur esse quis nulla sunt minim qui duis ad reprehenderit sunt ea. Nisi laborum non laboris cillum mollit culpa do ad nulla anim."
 },
@@ -45,6 +51,7 @@
     "name": "Odd Duck",
     "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
     "cuisine": "American",
+    "type": "American",
     "stars": 4.5,
     "description": "Est et pariatur officia duis quis esse amet cupidatat nostrud enim occaecat occaecat. Laboris id fugiat anim amet nostrud et do. Sit quis esse tempor pariatur est eiusmod Lorem qui dolore culpa laborum laborum dolor excepteur. Proident consectetur sunt exercitation labore laborum. Deserunt aliquip irure enim consequat laboris cupidatat anim duis cillum elit adipisicing. Id nostrud eiusmod cupidatat sunt duis esse ipsum culpa ex Lorem culpa velit sint cupidatat. Et commodo eu excepteur sint non proident officia culpa."
 },
@@ -52,6 +59,7 @@
 "name": "Ramen Tatsuya",
 "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
 "cuisine": "Asian",
+"type": "Asian",
 "stars": 4,
 "description": "Aliquip reprehenderit ad cillum anim sit. Et aliquip elit cupidatat ullamco commodo cupidatat anim occaecat mollit duis. Laboris irure reprehenderit nisi ullamco mollit ipsum. Et qui culpa labore dolor id anim cupidatat deserunt consectetur dolore ut id proident. Dolor sit duis irure aute sunt. Nisi duis sint dolor ullamco amet consequat ut labore sunt quis et id."
 },
@@ -59,6 +67,7 @@
 "name": "Pitchfork Pretty",
 "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
 "cuisine": "BBQ",
+"type": "BBQ",
 "stars": 4,
 "description": "Excepteur commodo voluptate in non excepteur amet dolore."
 },
@@ -66,20 +75,23 @@
 "name": "Terry Black's",
 "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
 "cuisine": "BBQ",
+"type": "BBQ",
 "stars": 5,
 "description": "Minim officia aliquip fugiat occaecat minim incididunt cupidatat id pariatur in amet. Fugiat elit velit laboris aute est eiusmod qui quis sunt non non amet ad cillum. Proident proident ea nostrud laboris sit qui quis ut excepteur nisi."
 },
 {
 "name": "Home Slice",
 "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
-"cuisine": "Italian",
+"cuisine": "European",
+"type": "Italian",
 "stars": 4,
 "description": "Adipisicing incididunt voluptate et Lorem laboris nisi."
 },
 {
 "name": "Grizzelda's",
 "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
-"cuisine": "Mexican",
+"cuisine": "Latin",
+"type": "Mexican",
 "stars": 3,
 "description": "Lorem incididunt ea excepteur excepteur ut proident eiusmod aute. In aute ipsum dolor ea incididunt ex eiusmod dolore id aliqua do aliqua. Sit dolore quis do nisi nisi minim et laboris excepteur enim enim exercitation excepteur. Irure id pariatur esse quis nulla sunt minim qui duis ad reprehenderit sunt ea. Nisi laborum non laboris cillum mollit culpa do ad nulla anim."
 }]

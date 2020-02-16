@@ -10,6 +10,7 @@ const restuarantSchema = mongoose.Schema({
     name: String,
     img: String,
     cuisine: String,
+    type: String,
     stars: Number,
     description: String
 })

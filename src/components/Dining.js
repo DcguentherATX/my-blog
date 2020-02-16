@@ -17,7 +17,7 @@ const Dining = () => {
         .catch((err) => {
             console.log(err);
         })
-    })
+    }, [])
 
     const handleClick = (e) => {
         let searchTerm = e.target.getAttribute('value');
@@ -29,7 +29,8 @@ const Dining = () => {
             }
         })
         .then((response) => {
-            console.log(response);
+            console.log(response.data);
+            setRestaurants(response.data)
         })
         .catch((err) => {
             console.log(err);
