@@ -503,6 +503,21 @@ h2 {
     padding: 20px
 }
 
+/* <------------ Blog ------------> */
+
+.blog-container {
+    color: #253D60;
+    background-color: #EFF6EE;
+    padding: 75px 30px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 20vw);
+}
+
 /* <------------ Footer ------------> */
 
 .footer-container {
