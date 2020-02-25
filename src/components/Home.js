@@ -17,7 +17,7 @@ const Home = () => {
           nav.style.display = "block";
         }
         if (foot.style.display === "none") {
-          foot.style.display = "block";
+          foot.style.display = "flex";
         }
     })
 

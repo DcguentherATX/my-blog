@@ -28,7 +28,7 @@ const Restaurant = (props) => {
                         <span>{props.restaurant.type}</span>
                         <span>Rating: {props.restaurant.stars}</span>
                     </Card.Text>
-                    <Button onClick={handleShowModal} variant="primary">More Info</Button>
+                    <Button onClick={handleShowModal} variant="outline-light">More Info</Button>
                         <RestaurantModal 
                             className="restaurant-modal"
                             show={showModal}

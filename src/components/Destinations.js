@@ -22,7 +22,7 @@ const Destinations = () => {
           nav.style.display = "block";
         }
         if (foot.style.display === "none") {
-          foot.style.display = "block";
+          foot.style.display = "flex";
         }
 
         Axios.get('/images', {
@@ -114,7 +114,7 @@ const Destinations = () => {
                     <div className="dest-main-container">
                         <img className="dest-main-image" src={mainImage.img } alt="cartagena" />
                         <div className="dest-img-info">
-                            <div>Likes: {mainImage.likes} </div><div>Photographer: {mainImage.photographer}</div>
+                            <div>Likes: {mainImage.likes} </div><div className="artist-info"><div className="artist">Photographer: </div><span>{mainImage.photographer}</span></div>
                         </div>
                     </div>
                 </div>
