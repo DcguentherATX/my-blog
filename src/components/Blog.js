@@ -20,11 +20,17 @@ const Blog = () => {
                         <div className="blr1c1">
                             <h3 className="newspaper-title">Other Articles</h3>
                             <h4 className="newspaper-title minor-article">Making an API Request</h4>
+                            <div className="minibar"></div>
                             <h4 className="newspaper-title minor-article">Working with React Hooks</h4>
+                            <div className="minibar"></div>
                             <h4 className="newspaper-title minor-article">Building a Database</h4>
+                            <div className="minibar"></div>
                             <h4 className="newspaper-title minor-article">Adding Bootstrap To an Application</h4>
+                            <div className="minibar"></div>
                             <h4 className="newspaper-title minor-article">Making the Perfect Background Image</h4>
+                            <div className="minibar"></div>
                             <h4 className="newspaper-title minor-article">Dockerizing an Application</h4>
+                            <div className="minibar"></div>
                         </div>
                         <div className="blr1c2">
                             <img className="blog-image" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/103854200/original/05b309aa1bd93c430b34b99589fe6f7cd534b337/sketch-a-website-design-in-just-24-hours.jpg" />

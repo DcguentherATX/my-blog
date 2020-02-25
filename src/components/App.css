@@ -536,8 +536,9 @@ h3 {
     /* height: 100%; */
 }
 
-.newspaper-headline {
+.newspaper-title {
     text-transform: uppercase;
+    hyphens: auto;
 }
 
 .blog-image {
@@ -547,6 +548,13 @@ h3 {
 
 .minor-article {
     padding: 15px 0;
+}
+
+.minibar {
+    max-width: 3em;
+    height: 2px;
+    border-bottom: 2px solid #16072D;
+    margin: 5px 0;
 }
 
 .blr1c1 {
