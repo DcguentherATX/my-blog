@@ -3,8 +3,18 @@
 
  const RestaurantModal = ({ show, onHide, restaurant, handleClose}) => {
     //  console.log(restaurant);
-     const fullSite = `https://${restaurant.website}`;
+    const fullSite = `https://${restaurant.website}`;
     //  console.log(fullSite);
+
+    const reformatHours = (openHours, i) => {
+        let spl = openHours.split(': ');
+        return (
+            <div className="days" key={i}>
+                <div className="day">{spl[0]}:</div>
+                <div>{spl[1]}</div>
+            </div>
+        )
+    }
 
     return (
         <div>
@@ -19,16 +29,23 @@
 
                 <Modal.Body>
                     <Container>
-                        <Row>
+                        <Row className="top-row">
                             <Col>
                             <div className="modal-img-container">
                                 <img className="modal-img" src={restaurant.img} />
                             </div>
                             </Col>
                             <Col>
-                            <div className="restaurant-info">
-                                {restaurant.description}
-                            </div>
+                            <div className="rest-details">
+                                    <span>Address: {restaurant.address}</span>
+                                    <span>Phone: {restaurant.phone}</span>
+                                    <span>Website: <a href={fullSite}>{restaurant.website}</a></span>
+                                    <div>Hours:
+                                        <div className="hours-container">
+                                            {restaurant.hoursOfOperation.map((time, i) => reformatHours(time, i))}
+                                        </div>
+                                    </div>
+                                </div>
                             </Col>
                         </Row>
                         <Row>
@@ -38,12 +55,9 @@
                                 </div>
                             </Col>
                             <Col>
-                                <div className="rest-details">
-                                    <span>Phone: {restaurant.phone}</span>
-                                    <span>Address: {restaurant.address}</span>
-                                    <span>Website: <a href={fullSite}>{restaurant.website}</a></span>
-                                    <span>Hours of Operation: {restaurant.hoursOfOperation}</span>
-                                </div>
+                            <p className="restaurant-info">
+                                {restaurant.description}
+                            </p>
                             </Col>
                         </Row>
                     </Container>

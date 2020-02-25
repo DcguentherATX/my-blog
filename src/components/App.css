@@ -608,8 +608,26 @@ h3 {
     height: auto;
 }
 
-.restaurant-info {
+/* .restaurant-info {
     padding: 20px
+} */
+
+.top-row {
+    margin-bottom: 2em;
+}
+
+.hours-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5em;
+}
+
+.days {
+    display: flex;
+}
+
+.day {
+    width: 7em;
 }
 
 /* <------------ Blog ------------> */
