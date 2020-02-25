@@ -2,14 +2,23 @@ import React, { useState, useEffect } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button';
 import Restaurant from './Restaurant';
-import Navigation from './Navigation';
-import Footer from './Footer';
 import Axios from 'axios';
 
 const Dining = () => {
     const [restaurants, setRestaurants] = useState([]);
 
     useEffect(() => {
+        // keeps nav and footer visible on refresh
+        
+        const nav = document.getElementById("navigation");
+        const foot = document.getElementById("footer-container");
+        if (nav.style.display === "none") {
+          nav.style.display = "block";
+        }
+        if (foot.style.display === "none") {
+          foot.style.display = "block";
+        }
+
         Axios.get('/restaurants')
         .then((response) => {
             setRestaurants(response.data);
@@ -49,7 +58,6 @@ const Dining = () => {
 
     return (
         <>
-            {/* <Navigation /> */}
             <div className="dining">
                 <div className="top-container">
                     <h2 className="page-title">Dining</h2>
@@ -73,7 +81,6 @@ const Dining = () => {
                     </CardDeck>
                 </div>
             </div>
-            {/* <Footer /> */}
         </>
     )
 }

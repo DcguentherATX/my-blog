@@ -1,11 +1,22 @@
-import React from 'react';
-import Navigation from './Navigation';
-import Footer from './Footer';
+import React, { useEffect } from 'react';
 
 const Blog = () => {
+
+    // keeps nav and footer visible on refresh
+
+    useEffect(() => {
+        const nav = document.getElementById("navigation");
+        const foot = document.getElementById("footer-container");
+        if (nav.style.display === "none") {
+            nav.style.display = "block";
+        }
+        if (foot.style.display === "none") {
+            foot.style.display = "block";
+        }
+    })
+
     return (
         <>
-            {/* <Navigation /> */}
             <div className="blog">
                 <div className="top-container">
                     <h2 className="page-title">Blog</h2>
@@ -62,7 +73,6 @@ const Blog = () => {
                     </div>
                 </div>
             </div>
-            {/* <Footer /> */}
         </>
     )
 }

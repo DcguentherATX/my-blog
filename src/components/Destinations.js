@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
-import Navigation from './Navigation';
 import ImageSlider from './ImageSlider';
-import Footer from './Footer';
 import Axios from 'axios';
 
 const Destinations = () => {
@@ -17,6 +15,16 @@ const Destinations = () => {
     // set state on first render;
 
     useEffect(() => {
+        // keeps nav and footer visible on refresh
+        const nav = document.getElementById("navigation");
+        const foot = document.getElementById("footer-container");
+        if (nav.style.display === "none") {
+          nav.style.display = "block";
+        }
+        if (foot.style.display === "none") {
+          foot.style.display = "block";
+        }
+
         Axios.get('/images', {
             params: {
                 term: 'umbrellas'
@@ -85,7 +93,6 @@ const Destinations = () => {
     
     return (
         <>
-            {/* <Navigation /> */}
             <div className="destinations">
                 <div className="top-container">
                     <h2 className="page-title">Destinations</h2>
@@ -115,7 +122,6 @@ const Destinations = () => {
             <div className="slider-container">
                 <ImageSlider carouselImages={carouselImages} handleClick={handleClick}/>
             </div>
-            {/* <Footer /> */}
         </>
     )
 }

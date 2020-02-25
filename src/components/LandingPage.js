@@ -4,22 +4,18 @@ import Button from 'react-bootstrap/Button';
 import logo from '../../assets/images/logo-blue-cream.png';
 
 const LandingPage = () => {
-    const showNav = () => {
-        console.log('click to enter')
-        var x = document.getElementById("navigation");
-        console.log(x);
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
 
-        var y = document.getElementById("footer-container");
-        if (y.style.display === "none") {
-          y.style.display = "block";
-        } else {
-          y.style.display = "none";
-        }
+    // shows nav and footer when leaving landing page
+
+    const toggleNav = () => {
+      const nav = document.getElementById("navigation");
+      const foot = document.getElementById("footer-container");
+      if (nav.style.display === "none") {
+        nav.style.display = "block";
+      }
+      if (foot.style.display === "none") {
+        foot.style.display = "block";
+      }
     }
 
     return (
@@ -29,7 +25,7 @@ const LandingPage = () => {
                 <img src={logo} className="landing-logo" />
             </div>
             <div className="button-container">
-                <Link to="/home"><Button className="enter-button" variant="outline-light" onClick={showNav}>Enter</Button></Link>
+                <Link to="/home"><Button className="enter-button" variant="outline-light" onClick={toggleNav}>Enter</Button></Link>
             </div>
         </div>
     )
