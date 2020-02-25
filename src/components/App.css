@@ -485,6 +485,11 @@ h3 {
     flex-direction: column;
 }
 
+.rest-details {
+    display: flex;
+    flex-direction: column;
+}
+
 .restaurant-button-container {
     display: flex;
     justify-content: space-evenly;

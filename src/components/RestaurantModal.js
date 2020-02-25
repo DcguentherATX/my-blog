@@ -2,7 +2,9 @@
  import { Modal, Button, Container, Row, Col } from 'react-bootstrap';
 
  const RestaurantModal = ({ show, onHide, restaurant, handleClose}) => {
-     console.log(restaurant);
+    //  console.log(restaurant);
+     const fullSite = `https://${restaurant.website}`;
+     console.log(fullSite);
 
     return (
         <div>
@@ -36,8 +38,11 @@
                                 </div>
                             </Col>
                             <Col>
-                                <div>
-                                    <span>{restaurant.phone}</span>
+                                <div className="rest-details">
+                                    <span>Phone: {restaurant.phone}</span>
+                                    <span>Address: {restaurant.address}</span>
+                                    <span>Website: <a href={fullSite}>{restaurant.website}</a></span>
+                                    <span>Hours of Operation: {restaurant.hoursOfOperation}</span>
                                 </div>
                             </Col>
                         </Row>
