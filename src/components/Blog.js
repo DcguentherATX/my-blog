@@ -17,38 +17,42 @@ const Blog = () => {
                 </div>
                 <div className="blog-container">
                     <div className="blog-grid">
-                        <div className="br1bc1">
-                            <h2 className="newspaper-headline">Application Planning, Designing, and Sketching</h2>
+                        <div className="blr1c1">
+                            <h3 className="newspaper-title">Other Articles</h3>
+                            <h4 className="newspaper-title minor-article">Making an API Request</h4>
+                            <h4 className="newspaper-title minor-article">Working with React Hooks</h4>
+                            <h4 className="newspaper-title minor-article">Building a Database</h4>
+                            <h4 className="newspaper-title minor-article">Adding Bootstrap To an Application</h4>
+                            <h4 className="newspaper-title minor-article">Making the Perfect Background Image</h4>
+                            <h4 className="newspaper-title minor-article">Dockerizing an Application</h4>
                         </div>
-                        <div className='br2bc1'>
-                            <article className="main-entry">
-                            <p>Commodo non enim aliqua cupidatat sit non cupidatat do do ut dolore adipisicing exercitation. Do qui dolore magna fugiat. Ad occaecat quis laborum aute adipisicing laborum aliqua excepteur exercitation et adipisicing.2</p>
-                            <p>Nostrud commodo sint aliqua commodo aute. Laboris adipisicing dolor cupidatat eu labore ex fugiat. Et elit est enim proident exercitation. Magna nulla duis culpa id amet minim non nulla nisi anim aute id aliqua ex. Commodo pariatur veniam enim deserunt deserunt sit velit dolor ad non cillum officia.</p>
-                            <p>Adipisicing nulla laboris labore consectetur non sunt eiusmod. Lorem magna sunt sit officia adipisicing elit consectetur id ullamco sint quis. Esse anim eu sint tempor consequat sit officia.</p>
-                            <p>Dolore ipsum sunt occaecat ex ipsum fugiat elit. Fugiat minim ad cupidatat cillum voluptate. Cillum reprehenderit excepteur eiusmod ex. Dolore adipisicing irure proident irure commodo ea in proident. Veniam veniam exercitation pariatur nulla dolore cillum adipisicing pariatur duis esse commodo irure. Non duis aute minim amet eu voluptate exercitation aliquip duis reprehenderit. Velit irure consequat aliqua reprehenderit excepteur proident veniam sit consequat.</p>
-                            </article>
+                        <div className="blr1c2">
+                            <img className="blog-image" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/103854200/original/05b309aa1bd93c430b34b99589fe6f7cd534b337/sketch-a-website-design-in-just-24-hours.jpg" />
+                            <h2 className="newspaper-title">Application planning, designing, and sketching</h2>
                         </div>
-                        <div className="br2bc3">
-                            <img className="blog-image" src='https://live.staticflickr.com/3202/3307873748_44a6e5af53_z.jpg' alt="design sketch" />
+                        <div className="b1r1c4">
+                            <h3 className="newspaper-title">Building a Work Environment</h3>
+                            <span>Et Lorem proident cupidatat excepteur nulla excepteur.</span>
+                        </div>  
+                        <div className="b1r2c4">
+                            <h3 className="newspaper-title">Building a Gallery with CSS Grid</h3>
+                            <span>Duis consequat quis occaecat consectetur enim magna veniam elit eu.</span>
                         </div>
-                        <div className="br4bc1">
-                            <h3 className="newspaper-headline">Color Theory</h3>
+                        <div className="blr3c2">
+                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/tqOPReoXgqaxF8wILN891bMPbu_Y6KlG4W5V3YMakccxXDVlfDlsDQUGUo4daJ06LPkOue7Srz9JTwL5zUDSM8d41FbtmX7Tx8-ASmNpOzgwwr6iD6Vr7w" />
+                            <h4 className="newspaper-title">Color Theory</h4>
+                            <span>Sit eu laboris consequat consequat in eu sint tempor eiusmod ut ipsum enim ipsum ea.</span>
                         </div>
-                        <div className="br5bc1">
-                            <p>In ut voluptate commodo ut pariatur nostrud. Officia consectetur occaecat sit officia velit consectetur ad esse veniam cillum. Voluptate velit laboris adipisicing tempor laborum dolor incididunt. Dolore ex incididunt reprehenderit excepteur sit. Culpa dolore commodo in laborum enim commodo reprehenderit est officia.</p>
-                            <p>Veniam magna laboris nisi qui sint reprehenderit non culpa. Ea ad ad do duis duis. Eiusmod consectetur dolore labore anim adipisicing est et do. Adipisicing voluptate laboris minim ad labore commodo officia quis dolor duis aliqua cupidatat non proident.</p>
+                        <div className="blr3c3">
+                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/tqOPReoXgqaxF8wILN891bMPbu_Y6KlG4W5V3YMakccxXDVlfDlsDQUGUo4daJ06LPkOue7Srz9JTwL5zUDSM8d41FbtmX7Tx8-ASmNpOzgwwr6iD6Vr7w" />
+                            <h4 className="newspaper-title">Environmental Variables</h4>
+                            <span>Tempor dolore pariatur voluptate tempor amet cupidatat cupidatat ut aliquip culpa.</span>
                         </div>
-                        <div className="br5bc2">
-                            <img className="blog-image" src="https://www.goodfreephotos.com/albums/vector-images/color-wheel-vector-clipart.png" alt="color wheel" />
-                        </div>
-                        <div className="br4bc3">
-                            <h3 className="newspaper-headline">Building the Development Environment</h3>
-                        </div>
-                        <div className="br4bc4 blog-entry">
-                            <p>Duis eiusmod exercitation ad non cupidatat anim veniam do duis enim esse. Proident elit veniam ullamco dolore culpa. Cupidatat commodo Lorem culpa duis do sint nulla officia sunt. Veniam irure consequat laboris tempor sint incididunt ex magna velit.</p>
-                            <p>Enim eu ullamco mollit cillum ullamco tempor et aute mollit commodo ex. Nulla in reprehenderit incididunt cupidatat laborum. Minim est in deserunt incididunt eu eu. Veniam Lorem aute cillum nisi tempor laborum irure duis deserunt. Aliqua eu culpa quis dolore aliquip nulla voluptate veniam anim incididunt esse anim labore veniam.</p>
-                            <p>Sunt officia elit amet ut dolore est cillum pariatur enim do do nulla do. Non qui officia labore voluptate anim pariatur sit. Velit duis anim culpa anim Lorem. Ex occaecat sint nostrud magna nisi eu amet deserunt veniam incididunt ad pariatur aliqua nostrud. Proident sunt ex mollit ex non nulla. Aliquip ullamco sit id velit sit ullamco sint amet cillum. Velit culpa aliqua consequat aliqua sunt.</p>
-                        </div>
+                        <div className="blr3c4">
+                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/tqOPReoXgqaxF8wILN891bMPbu_Y6KlG4W5V3YMakccxXDVlfDlsDQUGUo4daJ06LPkOue7Srz9JTwL5zUDSM8d41FbtmX7Tx8-ASmNpOzgwwr6iD6Vr7w" />
+                            <h4 className="newspaper-title">React Router</h4>
+                            <span>Dolor et adipisicing nostrud eiusmod do non fugiat.</span>
+                        </div>                
                     </div>
                 </div>
             </div>

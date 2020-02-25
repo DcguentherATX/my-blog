@@ -4,7 +4,7 @@
  const RestaurantModal = ({ show, onHide, restaurant, handleClose}) => {
     //  console.log(restaurant);
      const fullSite = `https://${restaurant.website}`;
-     console.log(fullSite);
+    //  console.log(fullSite);
 
     return (
         <div>
