@@ -85,7 +85,7 @@ const Destinations = () => {
     
     return (
         <>
-            <Navigation />
+            {/* <Navigation /> */}
             <div className="destinations">
                 <div className="top-container">
                     <h2 className="page-title">Destinations</h2>
@@ -115,7 +115,7 @@ const Destinations = () => {
             <div className="slider-container">
                 <ImageSlider carouselImages={carouselImages} handleClick={handleClick}/>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

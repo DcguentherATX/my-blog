@@ -1,7 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import LandingPage from './LandingPage';
-import Welcome from './Welcome';
+import Navigation from './Navigation';
+import Footer from './Footer';
+import Home from './Home';
 import About from './About';
 import Gallery from './Gallery';
 import Destinations from './Destinations';
@@ -13,15 +15,17 @@ const App = () => {
     return (
         <>
         <Router >
+            <Navigation />
             <Switch>
                 <Route path="/" component={LandingPage} exact />
-                {/* <Route path="/welcome" component={Welcome} exact /> */}
-                <Route path="/about" component={About} exact />
-                <Route path="/gallery" component={Gallery} exact />
-                <Route path="/destinations" component={Destinations} exact></Route>
-                <Route path="/dining" component={Dining} exact></Route>
-                <Route path="/blog" component={Blog} exact></Route>
+                <Route path="/home" component={Home}/>
+                {/* <Route path="/about" component={About} /> */}
+                <Route path="/gallery" component={Gallery} />
+                <Route path="/destinations" component={Destinations} ></Route>
+                <Route path="/dining" component={Dining} ></Route>
+                <Route path="/blog" component={Blog} ></Route>
             </Switch>
+            <Footer />
         </Router>
         </>
     )

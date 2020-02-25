@@ -5,7 +5,7 @@ import Footer from './Footer';
 const Blog = () => {
     return (
         <>
-            <Navigation />
+            {/* <Navigation /> */}
             <div className="blog">
                 <div className="top-container">
                     <h2 className="page-title">Blog</h2>
@@ -45,24 +45,24 @@ const Blog = () => {
                             <span>Duis consequat quis occaecat consectetur enim magna veniam elit eu.</span>
                         </div>
                         <div className="blr3c2">
-                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/tqOPReoXgqaxF8wILN891bMPbu_Y6KlG4W5V3YMakccxXDVlfDlsDQUGUo4daJ06LPkOue7Srz9JTwL5zUDSM8d41FbtmX7Tx8-ASmNpOzgwwr6iD6Vr7w" />
+                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/mO1-M3HyWDoy-Owk02vdFACxikOIJ5MYTaJGH8qubFpPswN639Jn4snN6ryfmb4hdmtvMdeyjN0jNj2jwhjy6syvtGVSBwRQ_cTHgLpVjRsfJ5_adhNbgQ" />
                             <h4 className="newspaper-title">Color Theory</h4>
                             <span>Sit eu laboris consequat consequat in eu sint tempor eiusmod ut ipsum enim ipsum ea.</span>
                         </div>
                         <div className="blr3c3">
-                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/tqOPReoXgqaxF8wILN891bMPbu_Y6KlG4W5V3YMakccxXDVlfDlsDQUGUo4daJ06LPkOue7Srz9JTwL5zUDSM8d41FbtmX7Tx8-ASmNpOzgwwr6iD6Vr7w" />
+                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/mO1-M3HyWDoy-Owk02vdFACxikOIJ5MYTaJGH8qubFpPswN639Jn4snN6ryfmb4hdmtvMdeyjN0jNj2jwhjy6syvtGVSBwRQ_cTHgLpVjRsfJ5_adhNbgQ" />
                             <h4 className="newspaper-title">Environmental Variables</h4>
                             <span>Tempor dolore pariatur voluptate tempor amet cupidatat cupidatat ut aliquip culpa.</span>
                         </div>
                         <div className="blr3c4">
-                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/tqOPReoXgqaxF8wILN891bMPbu_Y6KlG4W5V3YMakccxXDVlfDlsDQUGUo4daJ06LPkOue7Srz9JTwL5zUDSM8d41FbtmX7Tx8-ASmNpOzgwwr6iD6Vr7w" />
+                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/mO1-M3HyWDoy-Owk02vdFACxikOIJ5MYTaJGH8qubFpPswN639Jn4snN6ryfmb4hdmtvMdeyjN0jNj2jwhjy6syvtGVSBwRQ_cTHgLpVjRsfJ5_adhNbgQ" />
                             <h4 className="newspaper-title">React Router</h4>
                             <span>Dolor et adipisicing nostrud eiusmod do non fugiat.</span>
                         </div>                
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

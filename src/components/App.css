@@ -81,7 +81,13 @@ h3 {
 
 /* <------------ Navigation ------------> */
 
-.navigation {
+/* .navigation {
+    color: #EFF6EE;
+    background-color: #16072D;
+} */
+
+#navigation {
+    display: none;
     color: #EFF6EE;
     background-color: #16072D;
 }
@@ -146,7 +152,13 @@ h3 {
 }
 
 .dropdown-item.active {
-    display: none;
+    color: black;
+    background-color: #EFF6EE;
+}
+
+.dropdown-item.active:hover {
+    color: #EFF6EE;
+    background-color: #253D60;
 }
 
 /* <------------ About ------------> */
@@ -639,7 +651,7 @@ h3 {
 
 /* <------------ Footer ------------> */
 
-.footer-container {
+#footer-container {
     color: #EFF6EE;
     background-color: #16072D;
     display: flex;

@@ -49,7 +49,7 @@ const Dining = () => {
 
     return (
         <>
-            <Navigation />
+            {/* <Navigation /> */}
             <div className="dining">
                 <div className="top-container">
                     <h2 className="page-title">Dining</h2>
@@ -73,7 +73,7 @@ const Dining = () => {
                     </CardDeck>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

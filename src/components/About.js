@@ -10,7 +10,7 @@ import model from '../../assets/images/model.jpg';
 const About = () => {
     return (
         <>
-        <Navigation />
+        {/* <Navigation /> */}
 
     <div className="about">
         <Container className="about-container">
@@ -37,7 +37,7 @@ const About = () => {
             </Row>
         </Container>
     </div>
-    <Footer />
+    {/* <Footer /> */}
     </>
     )
 }

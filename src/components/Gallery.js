@@ -17,7 +17,7 @@ import thailand from '../../assets/images/thailand.jpg'
 const Gallery = () => {
     return (
         <>
-            <Navigation />
+            {/* <Navigation /> */}
             <div className="gallery">
                 <div className="top-container">
                     <h2 className="page-title">Gallery</h2>
@@ -62,7 +62,7 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

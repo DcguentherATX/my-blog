@@ -6,7 +6,7 @@ import github from '../../assets/images/github-logo.png';
 
 const Footer = () => {
     return (
-        <div className="footer-container">
+        <div id="footer-container" style={{display: "none"}}>
             <div className="built-by">Built by David Guenther</div>
             <div className="social-links">
                 <img src={linkedIn} className="social-logo" />

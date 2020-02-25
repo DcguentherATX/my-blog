@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Navigation from './Navigation';
 import About from './About';
 import Gallery from './Gallery';
@@ -8,23 +8,22 @@ import Dining from './Dining';
 import Blog from './Blog';
 import Footer from './Footer';
 
-const Welcome = () => {
+const Home = () => {
     return (
         <>
-        <Navigation />
+        {/* <Navigation /> */}
             <div>
-                {/* <Switch>
-                    <Route path="/welcome" component={Welcome}></Route>
-                    <Route path="/about" component={About}></Route>
+                <Switch>
+                    <Route path="/home" component={About}></Route>
                     <Route path="/gallery" component={Gallery}></Route>
                     <Route path="/destinations" component={Destinations}></Route>
                     <Route path="/dining" component={Dining}></Route>
                     <Route path="/blog" component={Blog}></Route>
-                </Switch> */}
+                </Switch>
             </div>
-            <Footer />
+        {/* <Footer /> */}
         </>
     )
 }
 
-export default Welcome;
+export default Home;
