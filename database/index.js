@@ -12,6 +12,10 @@ const restuarantSchema = mongoose.Schema({
     cuisine: String,
     type: String,
     stars: Number,
+    phone: String,
+    address: String,
+    website: String,
+    hoursOfOperation: [String],
     description: String
 })
 

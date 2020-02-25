@@ -1,11 +1,23 @@
 [
-    {
-        "name": "Launderette",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
-        "cuisine": "American",
-        "type": "American",
-        "stars": 5,
-        "description": "Adipisicing incididunt voluptate et Lorem laboris nisi."
+{
+    "name": "Launderette",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Restaurant_Zuiver_.jpg/1599px-Restaurant_Zuiver_.jpg",
+    "cuisine": "American",
+    "type": "American",
+    "stars": 5,
+    "phone": "555-555-5555",
+    "address": "111 Maple Dr.",
+    "website": "www.launderette.com",
+    "hoursOfOperation": [
+        "Monday: 8:00 AM - 8:00 PM",
+        "Tuesday: 8:00 AM - 8:00 PM",
+        "Wednesday: 8:00 AM - 8:00 PM",
+        "Thursday: 8:00 AM - 8:00 PM",
+        "Friday: 8:00 AM - 8:00 PM",
+        "Saturday: 8:00 AM - 8:00 PM",
+        "Sunday: 8:00 AM - 8:00 PM"
+    ],
+    "description": "Adipisicing incididunt voluptate et Lorem laboris nisi."
 },
 {
     "name": "Suerte",
@@ -13,6 +25,18 @@
     "cuisine": "Latin",
     "type": "Mexican",
     "stars": 4,
+    "phone": "555-555-5555",
+    "address": "111 Maple Dr.",
+    "website": "www.launderette.com",
+    "hoursOfOperation": [
+        "Monday: 8:00 AM - 8:00 PM",
+        "Tuesday: 8:00 AM - 8:00 PM",
+        "Wednesday: 8:00 AM - 8:00 PM",
+        "Thursday: 8:00 AM - 8:00 PM",
+        "Friday: 8:00 AM - 8:00 PM",
+        "Saturday: 8:00 AM - 8:00 PM",
+        "Sunday: 8:00 AM - 8:00 PM"
+    ],
     "description": "Aliquip reprehenderit ad cillum anim sit. Et aliquip elit cupidatat ullamco commodo cupidatat anim occaecat mollit duis. Laboris irure reprehenderit nisi ullamco mollit ipsum. Et qui culpa labore dolor id anim cupidatat deserunt consectetur dolore ut id proident. Dolor sit duis irure aute sunt. Nisi duis sint dolor ullamco amet consequat ut labore sunt quis et id."
 },
 {
@@ -21,6 +45,18 @@
     "cuisine": "European",
     "type": "French",
     "stars": 3,
+    "phone": "555-555-5555",
+    "address": "111 Maple Dr.",
+    "website": "www.launderette.com",
+    "hoursOfOperation": [
+        "Monday: 8:00 AM - 8:00 PM",
+        "Tuesday: 8:00 AM - 8:00 PM",
+        "Wednesday: 8:00 AM - 8:00 PM",
+        "Thursday: 8:00 AM - 8:00 PM",
+        "Friday: 8:00 AM - 8:00 PM",
+        "Saturday: 8:00 AM - 8:00 PM",
+        "Sunday: 8:00 AM - 8:00 PM"
+    ],
     "description": "Excepteur commodo voluptate in non excepteur amet dolore."
 },
 {
@@ -29,6 +65,18 @@
     "cuisine": "Latin",
     "type": "Mexican",
     "stars": 5,
+    "phone": "555-555-5555",
+    "address": "111 Maple Dr.",
+    "website": "www.launderette.com",
+    "hoursOfOperation": [
+        "Monday: 8:00 AM - 8:00 PM",
+        "Tuesday: 8:00 AM - 8:00 PM",
+        "Wednesday: 8:00 AM - 8:00 PM",
+        "Thursday: 8:00 AM - 8:00 PM",
+        "Friday: 8:00 AM - 8:00 PM",
+        "Saturday: 8:00 AM - 8:00 PM",
+        "Sunday: 8:00 AM - 8:00 PM"
+    ],
     "description": "Minim officia aliquip fugiat occaecat minim incididunt cupidatat id pariatur in amet. Fugiat elit velit laboris aute est eiusmod qui quis sunt non non amet ad cillum. Proident proident ea nostrud laboris sit qui quis ut excepteur nisi."
 },
 {
@@ -37,6 +85,18 @@
     "cuisine": "American",
     "type": "American",
     "stars": 4,
+    "phone": "555-555-5555",
+    "address": "111 Maple Dr.",
+    "website": "www.launderette.com",
+    "hoursOfOperation": [
+        "Monday: 8:00 AM - 8:00 PM",
+        "Tuesday: 8:00 AM - 8:00 PM",
+        "Wednesday: 8:00 AM - 8:00 PM",
+        "Thursday: 8:00 AM - 8:00 PM",
+        "Friday: 8:00 AM - 8:00 PM",
+        "Saturday: 8:00 AM - 8:00 PM",
+        "Sunday: 8:00 AM - 8:00 PM"
+    ],
     "description": "Adipisicing incididunt voluptate et Lorem laboris nisi."
 },
 {
@@ -45,6 +105,18 @@
     "cuisine": "Asian",
     "type": "Indian",
     "stars": 3,
+    "phone": "555-555-5555",
+    "address": "111 Maple Dr.",
+    "website": "www.launderette.com",
+    "hoursOfOperation": [
+        "Monday: 8:00 AM - 8:00 PM",
+        "Tuesday: 8:00 AM - 8:00 PM",
+        "Wednesday: 8:00 AM - 8:00 PM",
+        "Thursday: 8:00 AM - 8:00 PM",
+        "Friday: 8:00 AM - 8:00 PM",
+        "Saturday: 8:00 AM - 8:00 PM",
+        "Sunday: 8:00 AM - 8:00 PM"
+    ],
     "description": "Lorem incididunt ea excepteur excepteur ut proident eiusmod aute. In aute ipsum dolor ea incididunt ex eiusmod dolore id aliqua do aliqua. Sit dolore quis do nisi nisi minim et laboris excepteur enim enim exercitation excepteur. Irure id pariatur esse quis nulla sunt minim qui duis ad reprehenderit sunt ea. Nisi laborum non laboris cillum mollit culpa do ad nulla anim."
 },
 {
@@ -53,6 +125,18 @@
     "cuisine": "American",
     "type": "American",
     "stars": 4.5,
+    "phone": "555-555-5555",
+    "address": "111 Maple Dr.",
+    "website": "www.launderette.com",
+    "hoursOfOperation": [
+        "Monday: 8:00 AM - 8:00 PM",
+        "Tuesday: 8:00 AM - 8:00 PM",
+        "Wednesday: 8:00 AM - 8:00 PM",
+        "Thursday: 8:00 AM - 8:00 PM",
+        "Friday: 8:00 AM - 8:00 PM",
+        "Saturday: 8:00 AM - 8:00 PM",
+        "Sunday: 8:00 AM - 8:00 PM"
+    ],
     "description": "Est et pariatur officia duis quis esse amet cupidatat nostrud enim occaecat occaecat. Laboris id fugiat anim amet nostrud et do. Sit quis esse tempor pariatur est eiusmod Lorem qui dolore culpa laborum laborum dolor excepteur. Proident consectetur sunt exercitation labore laborum. Deserunt aliquip irure enim consequat laboris cupidatat anim duis cillum elit adipisicing. Id nostrud eiusmod cupidatat sunt duis esse ipsum culpa ex Lorem culpa velit sint cupidatat. Et commodo eu excepteur sint non proident officia culpa."
 },
 {
@@ -61,6 +145,18 @@
 "cuisine": "Asian",
 "type": "Asian",
 "stars": 4,
+"phone": "555-555-5555",
+"address": "111 Maple Dr.",
+"website": "www.launderette.com",
+"hoursOfOperation": [
+    "Monday: 8:00 AM - 8:00 PM",
+    "Tuesday: 8:00 AM - 8:00 PM",
+    "Wednesday: 8:00 AM - 8:00 PM",
+    "Thursday: 8:00 AM - 8:00 PM",
+    "Friday: 8:00 AM - 8:00 PM",
+    "Saturday: 8:00 AM - 8:00 PM",
+    "Sunday: 8:00 AM - 8:00 PM"
+],
 "description": "Aliquip reprehenderit ad cillum anim sit. Et aliquip elit cupidatat ullamco commodo cupidatat anim occaecat mollit duis. Laboris irure reprehenderit nisi ullamco mollit ipsum. Et qui culpa labore dolor id anim cupidatat deserunt consectetur dolore ut id proident. Dolor sit duis irure aute sunt. Nisi duis sint dolor ullamco amet consequat ut labore sunt quis et id."
 },
 {
@@ -69,6 +165,18 @@
 "cuisine": "BBQ",
 "type": "BBQ",
 "stars": 4,
+"phone": "555-555-5555",
+"address": "111 Maple Dr.",
+"website": "www.launderette.com",
+"hoursOfOperation": [
+    "Monday: 8:00 AM - 8:00 PM",
+    "Tuesday: 8:00 AM - 8:00 PM",
+    "Wednesday: 8:00 AM - 8:00 PM",
+    "Thursday: 8:00 AM - 8:00 PM",
+    "Friday: 8:00 AM - 8:00 PM",
+    "Saturday: 8:00 AM - 8:00 PM",
+    "Sunday: 8:00 AM - 8:00 PM"
+],
 "description": "Excepteur commodo voluptate in non excepteur amet dolore."
 },
 {
@@ -77,6 +185,18 @@
 "cuisine": "BBQ",
 "type": "BBQ",
 "stars": 5,
+"phone": "555-555-5555",
+"address": "111 Maple Dr.",
+"website": "www.launderette.com",
+"hoursOfOperation": [
+    "Monday: 8:00 AM - 8:00 PM",
+    "Tuesday: 8:00 AM - 8:00 PM",
+    "Wednesday: 8:00 AM - 8:00 PM",
+    "Thursday: 8:00 AM - 8:00 PM",
+    "Friday: 8:00 AM - 8:00 PM",
+    "Saturday: 8:00 AM - 8:00 PM",
+    "Sunday: 8:00 AM - 8:00 PM"
+],
 "description": "Minim officia aliquip fugiat occaecat minim incididunt cupidatat id pariatur in amet. Fugiat elit velit laboris aute est eiusmod qui quis sunt non non amet ad cillum. Proident proident ea nostrud laboris sit qui quis ut excepteur nisi."
 },
 {
@@ -85,6 +205,18 @@
 "cuisine": "European",
 "type": "Italian",
 "stars": 4,
+"phone": "555-555-5555",
+"address": "111 Maple Dr.",
+"website": "www.launderette.com",
+"hoursOfOperation": [
+    "Monday: 8:00 AM - 8:00 PM",
+    "Tuesday: 8:00 AM - 8:00 PM",
+    "Wednesday: 8:00 AM - 8:00 PM",
+    "Thursday: 8:00 AM - 8:00 PM",
+    "Friday: 8:00 AM - 8:00 PM",
+    "Saturday: 8:00 AM - 8:00 PM",
+    "Sunday: 8:00 AM - 8:00 PM"
+],
 "description": "Adipisicing incididunt voluptate et Lorem laboris nisi."
 },
 {
@@ -93,5 +225,17 @@
 "cuisine": "Latin",
 "type": "Mexican",
 "stars": 3,
+"phone": "555-555-5555",
+"address": "111 Maple Dr.",
+"website": "www.launderette.com",
+"hoursOfOperation": [
+    "Monday: 8:00 AM - 8:00 PM",
+    "Tuesday: 8:00 AM - 8:00 PM",
+    "Wednesday: 8:00 AM - 8:00 PM",
+    "Thursday: 8:00 AM - 8:00 PM",
+    "Friday: 8:00 AM - 8:00 PM",
+    "Saturday: 8:00 AM - 8:00 PM",
+    "Sunday: 8:00 AM - 8:00 PM"
+],
 "description": "Lorem incididunt ea excepteur excepteur ut proident eiusmod aute. In aute ipsum dolor ea incididunt ex eiusmod dolore id aliqua do aliqua. Sit dolore quis do nisi nisi minim et laboris excepteur enim enim exercitation excepteur. Irure id pariatur esse quis nulla sunt minim qui duis ad reprehenderit sunt ea. Nisi laborum non laboris cillum mollit culpa do ad nulla anim."
 }]

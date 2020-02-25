@@ -7,7 +7,6 @@ import RestaurantModal from './RestaurantModal'
 const Restaurant = (props) => {
 
     const [showModal, setShowModal] = useState(false);
-    const [closeModal, setCloseModal] = useState(false);
 
     const handleShowModal = () => {
         setShowModal(true);
