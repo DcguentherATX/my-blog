@@ -226,6 +226,8 @@ h5 {
 }
 
 .info-container {
+    display: flex;
+    flex-direction: column;
     max-width: 50em;
     padding-top: 30px;
 }
@@ -433,24 +435,34 @@ h5 {
 .blog-container {
     color: #253D60;
     background-color: #EFF6EE;
-    padding: 75px 30px;
     overflow-x: hidden;
     max-height: 100vh;
 }
 
 .blog-grid {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: .1em;
+    background-color: #253D6080;
 }
 
 .newspaper-title {
     text-transform: uppercase;
     hyphens: auto;
+    text-overflow: ellipsis;
 }
 
 .blog-image {
     max-width: 100%;
     height: auto;
+}
+
+.blog-item {
+    background-color: #EFF6EE;
+    padding: 10px;
+}
+
+.minor-title {
+    padding: 8px 0;
 }
 
 .minor-article {
@@ -494,7 +506,7 @@ h5 {
 
 /* <------------ Media Queries ------------> */
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
     .r1c1 {
         grid-column: 1 / 3;
         grid-row: 1 / 3;
@@ -547,7 +559,7 @@ h5 {
     
     .blog-grid {
         display: grid;
-        grid-gap: 20px;
+        grid-gap: .1em;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 1fr);
         /* height: 100%; */
@@ -589,7 +601,7 @@ h5 {
     }
     }
     
-    @media only screen and (max-width: 900px) {
+    @media only screen and (max-width: 800px) {
         .gallery-grid {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(6, 40vw);
@@ -645,6 +657,8 @@ h5 {
         }
     
         .blog-grid {
+            grid-gap: 1em;
+            background-color: #EFF6EE;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(9, auto);
         }
@@ -685,7 +699,7 @@ h5 {
         }
     }
     
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 500px) {
         .gallery-grid {
             display: flex;
             flex-direction: column;
@@ -700,6 +714,8 @@ h5 {
 
         .blog-grid {
             display: grid;
+            grid-gap: 1em;
+            background-color: #EFF6EE;
             grid-template-rows: repeat(7, auto);
             grid-template-columns: repeat(1, 95vw);
         }

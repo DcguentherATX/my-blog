@@ -28,13 +28,13 @@ const Blog = () => {
                 </div>
                 <div className="blog-container">
                     <div className="blog-grid">
-                        <div className="blr1c1">
+                        <div className="blr1c1 blog-item">
                             <h3 className="newspaper-title">Other Articles</h3>
                             <h4 className="newspaper-title minor-article">Making an API Request</h4>
                             <div className="minibar"></div>
                             <h4 className="newspaper-title minor-article">Working with React Hooks</h4>
                             <div className="minibar"></div>
-                            <h4 className="newspaper-title minor-article">Building a Database</h4>
+                            <h4 className="newspaper-title minor-article">Setting up a Development Environment</h4>
                             <div className="minibar"></div>
                             <h4 className="newspaper-title minor-article">Adding Bootstrap To an Application</h4>
                             <div className="minibar"></div>
@@ -43,32 +43,32 @@ const Blog = () => {
                             <h4 className="newspaper-title minor-article">Dockerizing an Application</h4>
                             <div className="minibar"></div>
                         </div>
-                        <div className="blr1c2">
-                            <img className="blog-image" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/103854200/original/05b309aa1bd93c430b34b99589fe6f7cd534b337/sketch-a-website-design-in-just-24-hours.jpg" />
+                        <div className="blr1c2 blog-item">
                             <h2 className="newspaper-title">Application planning, designing, and sketching</h2>
+                            <img className="blog-image" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/103854200/original/05b309aa1bd93c430b34b99589fe6f7cd534b337/sketch-a-website-design-in-just-24-hours.jpg" />
                         </div>
-                        <div className="b1r1c4">
-                            <h3 className="newspaper-title">Building a Work Environment</h3>
+                        <div className="b1r1c4 blog-item">
+                            <h3 className="newspaper-title">Building a Database</h3>
                             <span>Et Lorem proident cupidatat excepteur nulla excepteur.</span>
                         </div>  
-                        <div className="b1r2c4">
+                        <div className="b1r2c4 blog-item">
                             <h3 className="newspaper-title">Building a Gallery with CSS Grid</h3>
                             <span>Duis consequat quis occaecat consectetur enim magna veniam elit eu.</span>
                         </div>
-                        <div className="blr3c2">
+                        <div className="blr3c2 blog-item">
                             <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/mO1-M3HyWDoy-Owk02vdFACxikOIJ5MYTaJGH8qubFpPswN639Jn4snN6ryfmb4hdmtvMdeyjN0jNj2jwhjy6syvtGVSBwRQ_cTHgLpVjRsfJ5_adhNbgQ" />
-                            <h4 className="newspaper-title">Color Theory</h4>
+                            <h4 className="newspaper-title minor-title">Color Theory</h4>
                             <span>Sit eu laboris consequat consequat in eu sint tempor eiusmod ut ipsum enim ipsum ea.</span>
                         </div>
-                        <div className="blr3c3">
+                        <div className="blr3c3 blog-item">
                             <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/mO1-M3HyWDoy-Owk02vdFACxikOIJ5MYTaJGH8qubFpPswN639Jn4snN6ryfmb4hdmtvMdeyjN0jNj2jwhjy6syvtGVSBwRQ_cTHgLpVjRsfJ5_adhNbgQ" />
-                            <h4 className="newspaper-title">Environmental Variables</h4>
+                            <h4 className="newspaper-title minor-title">Environmental Variables</h4>
                             <span>Tempor dolore pariatur voluptate tempor amet cupidatat cupidatat ut aliquip culpa.</span>
                         </div>
-                        <div className="blr3c4">
+                        <div className="blr3c4 blog-item">
                             <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/mO1-M3HyWDoy-Owk02vdFACxikOIJ5MYTaJGH8qubFpPswN639Jn4snN6ryfmb4hdmtvMdeyjN0jNj2jwhjy6syvtGVSBwRQ_cTHgLpVjRsfJ5_adhNbgQ" />
-                            <h4 className="newspaper-title">React Router</h4>
-                            <span>Dolor et adipisicing nostrud eiusmod do non fugiat.</span>
+                            <h4 className="newspaper-title minor-title">React Router</h4>
+                            <span>Dolor et adipisicing nostrud eiusmod do non fugiat.  Sunt aute fugiat non nisi laborum ea incididunt.</span>
                         </div>                
                     </div>
                 </div>
