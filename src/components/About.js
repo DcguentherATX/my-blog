@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import blurb from '../../assets/images/blurb.png';
-import model from '../../assets/images/model.jpg';
+import model from '../../assets/images/David_Guenther.jpg';
 
 const About = () => {
     return (
@@ -15,12 +15,12 @@ const About = () => {
     <div className="about">
         <Container className="about-container">
             <Row className="about-row">
-                <Col xs={2} s={2} md={2} lg={1}>
+                <Col s={2} md={2} lg={1} className="blurb-col">
                     <div className="blurb-left">
                         <img src={blurb} className="blurb" />
                     </div>
                 </Col>
-                <Col xs={10} s={10} md= {10} lg={5}>
+                <Col xs={12} s={12} md= {10} lg={5} className="image-container">
                     <img src={model} className="male-model" />
                 </Col>
                 <Col className="about-info" xs={12} s={12} md={12} lg={6}>

@@ -191,9 +191,16 @@ h5 {
     height: 100%;
 }
 
+.image-container,
+.about-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .male-model {
-    max-height: 500px;
-    width: auto;
+    width: 98%;
+    height: auto;
     padding-bottom: 20px;
 }
 
@@ -697,6 +704,22 @@ h5 {
             grid-row: 4 / 5;
             grid-column: 2 / 3;
         }
+
+        .image-container,
+        .about-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .blurb-col {
+            display: none;
+        }
+
+        .blurb-left {
+            display: none;
+        }
     }
     
     @media only screen and (max-width: 500px) {
@@ -804,4 +827,5 @@ h5 {
         .artist {
             display: none;
         }
+
     }
