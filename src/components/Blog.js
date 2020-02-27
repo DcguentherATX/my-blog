@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import colorWheel from '../../assets/images/color_wheel.jpg';
 
 const Blog = () => {
 
@@ -21,15 +22,27 @@ const Blog = () => {
                 <div className="top-container">
                     <h2 className="page-title">Blog</h2>
                     <div className="info-container">
-                        <p>Dolore est ea esse irure id proident consequat exercitation ullamco. Adipisicing qui consequat aliquip nostrud sint ea adipisicing sint sit aute id veniam id tempor. Est fugiat magna tempor eu. Qui sunt pariatur proident occaecat ullamco dolore sint labore enim id esse. Lorem ipsum cupidatat tempor cillum et. Labore duis magna culpa in cillum sint excepteur irure non aliqua. Lorem sunt eu consectetur aliquip pariatur in consequat proident id sunt id.</p>
-                        <p>Sint proident reprehenderit veniam laborum pariatur. Reprehenderit incididunt dolore voluptate proident anim aliquip minim. Culpa officia anim reprehenderit quis esse aute veniam laborum incididunt commodo. Nostrud aute sunt dolore consequat cupidatat Lorem consectetur in pariatur commodo fugiat. Veniam officia quis quis esse deserunt duis. Consequat non excepteur minim ea consequat esse pariatur non occaecat cillum ea nulla nostrud.</p>
-                        <p>Et ex irure do ipsum voluptate non sit laboris cupidatat deserunt excepteur. Lorem do quis mollit voluptate Lorem deserunt aute. Occaecat do excepteur ad dolor fugiat occaecat fugiat ea. Excepteur excepteur magna do deserunt aliqua consequat do ullamco do aliquip commodo consequat ad. Aliqua aliqua consectetur in veniam aliquip esse minim consequat ipsum. Est ut cillum non ullamco pariatur ullamco pariatur. Elit esse quis fugiat est.</p>
+                        <p>
+                            I wanted to create a blog page in order to document my experience building this site in a
+                            series of short articles in which I could share resources that I found helpful along the way.
+                            In addition, I wanted to revisit CSS Grid to create a newspaper type layout.  Finally, I wanted
+                            to play with linking articles together so they could be followed as steps in a development process.
+                        </p>
+                        <p>
+                            Working with CSS Grid to create the newspaper layout was actually quite a challenge.   Word length caused
+                            some boxes to resize awkwardly and at times the photos were skewed and distorted.  At this point, I have a
+                            pretty good responsive design for the frontpage and am looking forward to writing the mini-articles and
+                            create the step through design.
+                        </p>
+                        <p>
+                            Check back soon to see what articles have been updated!
+                        </p>
                     </div>
                 </div>
                 <div className="blog-container">
                     <div className="blog-grid">
                         <div className="blr1c1 blog-item">
-                            <h3 className="newspaper-title">Other Articles</h3>
+                            <h3 className="newspaper-title minor-article">Other Articles</h3>
                             <h4 className="newspaper-title minor-article">Making an API Request</h4>
                             <div className="minibar"></div>
                             <h4 className="newspaper-title minor-article">Working with React Hooks</h4>
@@ -43,32 +56,32 @@ const Blog = () => {
                             <h4 className="newspaper-title minor-article">Dockerizing an Application</h4>
                             <div className="minibar"></div>
                         </div>
-                        <div className="blr1c2 blog-item">
+                        <div className="blr1c2 headliner">
                             <h2 className="newspaper-title">Application planning, designing, and sketching</h2>
-                            <img className="blog-image" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/103854200/original/05b309aa1bd93c430b34b99589fe6f7cd534b337/sketch-a-website-design-in-just-24-hours.jpg" />
+                            <img className="title-image" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto/gigs/103854200/original/05b309aa1bd93c430b34b99589fe6f7cd534b337/sketch-a-website-design-in-just-24-hours.jpg" />
                         </div>
                         <div className="b1r1c4 blog-item">
                             <h3 className="newspaper-title">Building a Database</h3>
-                            <span>Et Lorem proident cupidatat excepteur nulla excepteur.</span>
+                            <span>Proident reprehenderit excepteur do veniam veniam anim do consequat non sint cillum reprehenderit. Amet velit proident ut excepteur laboris. Irure do irure commodo elit mollit. Ea culpa velit excepteur Lorem nisi incididunt duis non minim magna et laboris Lorem ex. Dolore deserunt elit consectetur do cupidatat proident mollit qui amet cillum.</span>
                         </div>  
                         <div className="b1r2c4 blog-item">
                             <h3 className="newspaper-title">Building a Gallery with CSS Grid</h3>
-                            <span>Duis consequat quis occaecat consectetur enim magna veniam elit eu.</span>
+                            <span>Amet esse incididunt sit labore excepteur fugiat aute exercitation. Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
                         </div>
                         <div className="blr3c2 blog-item">
-                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/mO1-M3HyWDoy-Owk02vdFACxikOIJ5MYTaJGH8qubFpPswN639Jn4snN6ryfmb4hdmtvMdeyjN0jNj2jwhjy6syvtGVSBwRQ_cTHgLpVjRsfJ5_adhNbgQ" />
+                            <img className="blog-image" src={colorWheel} />
                             <h4 className="newspaper-title minor-title">Color Theory</h4>
-                            <span>Sit eu laboris consequat consequat in eu sint tempor eiusmod ut ipsum enim ipsum ea.</span>
+                            <span>Amet esse incididunt sit labore excepteur fugiat aute exercitation. Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam.</span>
                         </div>
                         <div className="blr3c3 blog-item">
-                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/mO1-M3HyWDoy-Owk02vdFACxikOIJ5MYTaJGH8qubFpPswN639Jn4snN6ryfmb4hdmtvMdeyjN0jNj2jwhjy6syvtGVSBwRQ_cTHgLpVjRsfJ5_adhNbgQ" />
+                            <img className="blog-image" src={colorWheel} />
                             <h4 className="newspaper-title minor-title">Environmental Variables</h4>
-                            <span>Tempor dolore pariatur voluptate tempor amet cupidatat cupidatat ut aliquip culpa.</span>
+                            <span>Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
                         </div>
                         <div className="blr3c4 blog-item">
-                            <img className="blog-image" src="https://lh3.googleusercontent.com/proxy/mO1-M3HyWDoy-Owk02vdFACxikOIJ5MYTaJGH8qubFpPswN639Jn4snN6ryfmb4hdmtvMdeyjN0jNj2jwhjy6syvtGVSBwRQ_cTHgLpVjRsfJ5_adhNbgQ" />
+                            <img className="blog-image" src={colorWheel} />
                             <h4 className="newspaper-title minor-title">React Router</h4>
-                            <span>Dolor et adipisicing nostrud eiusmod do non fugiat.  Sunt aute fugiat non nisi laborum ea incididunt.</span>
+                            <span>Amet esse incididunt sit labore excepteur fugiat aute exercitation. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
                         </div>                
                     </div>
                 </div>

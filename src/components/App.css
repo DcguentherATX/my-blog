@@ -459,6 +459,18 @@ h5 {
     text-overflow: ellipsis;
 }
 
+.title-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.headliner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EFF6EE;
+}
+
 .blog-image {
     max-width: 100%;
     height: auto;
@@ -466,7 +478,7 @@ h5 {
 
 .blog-item {
     background-color: #EFF6EE;
-    padding: 10px;
+    padding: 10px 10px 20px 10px;
 }
 
 .minor-title {
