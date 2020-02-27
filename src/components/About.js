@@ -25,7 +25,7 @@ const About = () => {
                 </Col>
                 <Col className="about-info" xs={12} s={12} md={12} lg={6}>
                 <p>
-                    My name is David Guenther and I am a recent Hack Reactor bootcamp graduate located in Austin.  I moved to 
+                    Hello!  My name is David Guenther and I am a recent Hack Reactor bootcamp graduate located in Austin.  I moved to 
                     Austin from New York where I worked in event management and staffing, hospitality, and finance.  My interest
                     in software engineering first developed in one of my previous positions where I interacted directly with a
                     database as the main users.  Semi-annually I would collaborate with the CEO and provide ideas on how to improve

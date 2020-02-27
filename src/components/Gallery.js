@@ -33,9 +33,26 @@ const Gallery = () => {
                 <div className="top-container">
                     <h2 className="page-title">Gallery</h2>
                     <div className="info-container">
-                        <p>Dolore est ea esse irure id proident consequat exercitation ullamco. Adipisicing qui consequat aliquip nostrud sint ea adipisicing sint sit aute id veniam id tempor. Est fugiat magna tempor eu. Qui sunt pariatur proident occaecat ullamco dolore sint labore enim id esse. Lorem ipsum cupidatat tempor cillum et. Labore duis magna culpa in cillum sint excepteur irure non aliqua. Lorem sunt eu consectetur aliquip pariatur in consequat proident id sunt id.</p>
-                        <p>Sint proident reprehenderit veniam laborum pariatur. Reprehenderit incididunt dolore voluptate proident anim aliquip minim. Culpa officia anim reprehenderit quis esse aute veniam laborum incididunt commodo. Nostrud aute sunt dolore consequat cupidatat Lorem consectetur in pariatur commodo fugiat. Veniam officia quis quis esse deserunt duis. Consequat non excepteur minim ea consequat esse pariatur non occaecat cillum ea nulla nostrud.</p>
-                        <p>Et ex irure do ipsum voluptate non sit laboris cupidatat deserunt excepteur. Lorem do quis mollit voluptate Lorem deserunt aute. Occaecat do excepteur ad dolor fugiat occaecat fugiat ea. Excepteur excepteur magna do deserunt aliqua consequat do ullamco do aliquip commodo consequat ad. Aliqua aliqua consectetur in veniam aliquip esse minim consequat ipsum. Est ut cillum non ullamco pariatur ullamco pariatur. Elit esse quis fugiat est.</p>
+                        <p>
+                            The gallery page was an opportunity for me to work with CSS Grid and responsive design.
+                            I had not worked with CSS Grid before, so I watched a quick tutorial and thought I would
+                            jump in and get coding.  I began with designing my desired layout for a desktop size screen.
+                            Simply put, I declared using grid-templates and expanded specific grid items to cover multiple
+                            rows and columns by declaring their span in CSS.
+                        </p>
+                        <p>
+                            It was then time to grab some images to fill the page, so I went to my favorite API, Unsplash,
+                            and grabbed some beautiful pics.  After loading the images into my application, I added a grid gap
+                            to create even space between the grid boxes.  Initially, my photos were taking a very long time to
+                            load, so I found a site that downsized the images for faster loading.
+                        </p>
+                        <p>
+                            My final goal for this page was to make the grid responsive based on screen size.  I quickly found
+                            that you can make media queries to discover the user's screen size and create breakpoints at specific
+                            positions to adjust the layout of the page.  I created sizing for mobile devices and for tablets, adjusting
+                            the layout of the photos and how the display.  Feel free to shrink and grow the window to see how this
+                            design looks in action!
+                        </p>
                     </div>
                 </div>
                 <div className="gallery-container">
