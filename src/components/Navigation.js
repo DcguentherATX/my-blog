@@ -18,7 +18,7 @@ const Navigation = () => {
                     >
                         <Dropdown.Item as={NavLink} to="/home" className="drop" eventKey="1" value="about">About</Dropdown.Item>
                         <Dropdown.Item as={NavLink} to="/gallery" className="drop" eventKey="2" value="gallery">Gallery</Dropdown.Item>
-                        <Dropdown.Item as={NavLink} to="/destinations" className="drop" eventKey="3" value="destinations">Destinations</Dropdown.Item>
+                        <Dropdown.Item as={NavLink} to="/photohunt" className="drop" eventKey="3" value="photohunt">Photo Hunt</Dropdown.Item>
                         <Dropdown.Item as={NavLink} to="/dining" className="drop" eventKey="4" value="dining" >Dining</Dropdown.Item>
                         <Dropdown.Item as={NavLink} to="/blog" className="drop" eventKey="5" value="blog" >Blog</Dropdown.Item>
                     </DropdownButton>

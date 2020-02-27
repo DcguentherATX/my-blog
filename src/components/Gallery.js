@@ -44,7 +44,9 @@ const Gallery = () => {
                             It was then time to grab some images to fill the page, so I went to my favorite API, Unsplash,
                             and grabbed some beautiful pics.  After loading the images into my application, I added a grid gap
                             to create even space between the grid boxes.  Initially, my photos were taking a very long time to
-                            load, so I found a site that downsized the images for faster loading.
+                            load, so I found a site that downsized the images for faster loading.  Unfortunately, the images were
+                            so high in resolution, that they still take time to load, so I may swap them over to svg's from jpg's
+                            in order to further reduce their file sizes.
                         </p>
                         <p>
                             My final goal for this page was to make the grid responsive based on screen size.  I quickly found

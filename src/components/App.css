@@ -258,7 +258,7 @@ h5 {
     object-fit: cover;
 }
 
-/* <------------ Destinations ------------> */
+/* <------------ Photo Hunt ------------> */
 
 .search-container {
     color: #253D60;
@@ -299,6 +299,7 @@ h5 {
 
 .dest-main-image {
     width: auto;
+    min-width: 25vw;
     max-width: 99vw;
     height: 100%;
     max-height: 99vh;
@@ -720,9 +721,10 @@ h5 {
         .blurb-left {
             display: none;
         }
+
     }
     
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 480px) {
         .gallery-grid {
             display: flex;
             flex-direction: column;
@@ -826,6 +828,10 @@ h5 {
 
         .artist {
             display: none;
+        }
+
+        #footer-container {
+            justify-content: flex-end;
         }
 
     }

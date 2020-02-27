@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import ImageSlider from './ImageSlider';
 import Axios from 'axios';
 
-const Destinations = () => {
+const PhotoHunt = () => {
     // initialize state
 
     const [mainImage, setMainImage] = useState({})
@@ -95,11 +95,35 @@ const Destinations = () => {
         <>
             <div className="destinations">
                 <div className="top-container">
-                    <h2 className="page-title">Destinations</h2>
+                    <h2 className="page-title">Photo Hunt</h2>
                     <div className="info-container">
-                        <p>Dolore est ea esse irure id proident consequat exercitation ullamco. Adipisicing qui consequat aliquip nostrud sint ea adipisicing sint sit aute id veniam id tempor. Est fugiat magna tempor eu. Qui sunt pariatur proident occaecat ullamco dolore sint labore enim id esse. Lorem ipsum cupidatat tempor cillum et. Labore duis magna culpa in cillum sint excepteur irure non aliqua. Lorem sunt eu consectetur aliquip pariatur in consequat proident id sunt id.</p>
-                        <p>Sint proident reprehenderit veniam laborum pariatur. Reprehenderit incididunt dolore voluptate proident anim aliquip minim. Culpa officia anim reprehenderit quis esse aute veniam laborum incididunt commodo. Nostrud aute sunt dolore consequat cupidatat Lorem consectetur in pariatur commodo fugiat. Veniam officia quis quis esse deserunt duis. Consequat non excepteur minim ea consequat esse pariatur non occaecat cillum ea nulla nostrud.</p>
-                        <p>Et ex irure do ipsum voluptate non sit laboris cupidatat deserunt excepteur. Lorem do quis mollit voluptate Lorem deserunt aute. Occaecat do excepteur ad dolor fugiat occaecat fugiat ea. Excepteur excepteur magna do deserunt aliqua consequat do ullamco do aliquip commodo consequat ad. Aliqua aliqua consectetur in veniam aliquip esse minim consequat ipsum. Est ut cillum non ullamco pariatur ullamco pariatur. Elit esse quis fugiat est.</p>
+                        <p>
+                            The purpose of this page was to make an API request to my favorite API, Unsplash, and create an
+                            interactive search that will render images to the page.  In addition, I wanted to display multiple
+                            photos in a carousel slider, and make the images clickable and resplace the main image.  This also
+                            seemed to be the perfect opportunity to work with React Hooks, which I had not previously used in
+                            development.
+                        </p>
+                        <p>
+                            I started developing this page by creating a simple search bar and making sure that my state was
+                            properly updating as the user entered a search term.  From there I developed a main image container
+                            that would render the first image from the API response.  Finally, I used React Slick Carousel to
+                            display the first ten images returned from the API.
+                        </p>
+                        <p>
+                            Initially, I made the API request directly from the PhotoHunt Component on the client side, however, this 
+                            is not exactly where I wanted to place this logic.  I ended up swapping over the request to the server and
+                            passing the search term in state via a constructed route.  I played around with several ways to make the
+                            request from the server according to the documentation I found online, and nothing seemed to be working.  Finally,
+                            I installed the request library and it worked like a charm and my API request was working successfully.
+                        </p>
+                        <p>
+                            There is something exciting about successfully making an API request and modifying the data to fit your
+                            applications need.  My favorite part of building this page was ciphering through the response data and 
+                            pulling out a couple details that may be of interest to the user (such as the photographer).  Finally,
+                            I added a simple click handler to my images in the carousel that updated the main image for the page.  I
+                            was able to manage this process with hooks, which made me feel very accomplished for a first time hook-user.
+                        </p>
                     </div>
                 </div>
                 <div className="search-container">
@@ -126,4 +150,4 @@ const Destinations = () => {
     )
 }
 
-export default Destinations;
+export default PhotoHunt;

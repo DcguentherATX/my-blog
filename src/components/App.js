@@ -4,9 +4,8 @@ import LandingPage from './LandingPage';
 import Navigation from './Navigation';
 import Footer from './Footer';
 import Home from './Home';
-import About from './About';
 import Gallery from './Gallery';
-import Destinations from './Destinations';
+import PhotoHunt from './PhotoHunt';
 import Dining from './Dining';
 import Blog from './Blog';
 import './App.css';
@@ -19,9 +18,8 @@ const App = () => {
             <Switch>
                 <Route path="/" component={LandingPage} exact />
                 <Route path="/home" component={Home}/>
-                {/* <Route path="/about" component={About} /> */}
                 <Route path="/gallery" component={Gallery} />
-                <Route path="/destinations" component={Destinations} ></Route>
+                <Route path="/photohunt" component={PhotoHunt} ></Route>
                 <Route path="/dining" component={Dining} ></Route>
                 <Route path="/blog" component={Blog} ></Route>
             </Switch>

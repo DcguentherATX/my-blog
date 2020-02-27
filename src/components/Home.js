@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import About from './About';
 import Gallery from './Gallery';
-import Destinations from './Destinations'
+import PhotoHunt from './PhotoHunt'
 import Dining from './Dining';
 import Blog from './Blog';
 
@@ -27,7 +27,7 @@ const Home = () => {
                 <Switch>
                     <Route path="/home" component={About}></Route>
                     <Route path="/gallery" component={Gallery}></Route>
-                    <Route path="/destinations" component={Destinations}></Route>
+                    <Route path="/photohunt" component={PhotoHunt}></Route>
                     <Route path="/dining" component={Dining}></Route>
                     <Route path="/blog" component={Blog}></Route>
                 </Switch>
