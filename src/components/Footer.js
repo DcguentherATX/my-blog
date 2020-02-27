@@ -9,9 +9,9 @@ const Footer = () => {
         <div id="footer-container" style={{display: "none"}}>
             <div className="built-by">Built by David Guenther</div>
             <div className="social-links">
-                <img src={linkedIn} className="social-logo" />
-                <img src={github} className="social-logo" />
-                <img src={instagram} className="social-logo insta" />
+                <a href="https://www.linkedin.com/in/david-guenther" target="_blank"><img src={linkedIn} className="social-logo" /></a>
+                <a href="https://github.com/DcguentherATX" target="_blank"><img src={github} className="social-logo" /></a>
+                <a href="https://www.instagram.com/dcguenther/" target="_blank"><img src={instagram} className="social-logo insta" /></a>
             </div>
         </div>
     )
