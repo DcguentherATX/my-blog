@@ -62,9 +62,26 @@ const Dining = () => {
                 <div className="top-container">
                     <h2 className="page-title">Dining</h2>
                     <div className="info-container">
-                        <p>Tempor labore aliqua dolore do adipisicing. Dolore magna exercitation ut et Lorem dolor nulla nostrud velit. Dolor amet ex elit est sint irure id excepteur laboris. Minim nulla sint magna nisi aliqua non veniam nostrud velit excepteur laboris velit cupidatat. Et reprehenderit veniam cillum irure et dolor sunt voluptate nostrud duis consectetur. Excepteur esse in ut qui fugiat qui labore qui nostrud. Et adipisicing dolore nulla amet.</p>
-                        <p>Ad sit mollit Lorem mollit sunt ad sunt exercitation. Nostrud aliquip voluptate est do nostrud excepteur culpa elit et consequat id dolor. Minim pariatur sint consequat id. Duis elit ullamco amet elit sit minim fugiat eu nostrud qui cillum.</p>
-                        <p>Aliquip exercitation voluptate ea aliquip ipsum enim irure mollit qui dolore duis ex. Magna dolor magna nostrud tempor cillum fugiat. Veniam commodo fugiat fugiat officia et id magna anim veniam ex elit aliquip Lorem. Et ex ex aute laborum dolore reprehenderit et id magna sit qui nisi. Esse sint ipsum et labore exercitation. Fugiat dolor magna sunt anim excepteur laboris adipisicing.</p>
+                        <p>
+                            My goals for the Dining page was to implement the use of a database, play around more with React Hooks,
+                            and to bring in a style library to help with the design aspect of the page.  Overall, the page will be
+                            my reviews and opinions of local Austin restaurants.  At this point, I'm just using placeholder information
+                            to seed my database, hence all the details and images are the same.  I would like to add an API request to
+                            Google for results, but could become quite costly once this application is deployed.
+                        </p>
+                        <p>
+                            My first step was to decide on a database for the project.  I went with MongoDB as I had no idea what my actual
+                            data would look like and I wanted to be able to fluidly make changes to the structure of this data.  I then
+                            created some dummy data and created a schema for my database.  Once this was successfully implemented, I then
+                            designed the page with Bootstrap.  I figured this page could benefit from Bootstrap's Card and Modal Components
+                            that allow for a lot of data items to be mapped over and rendered to the screen in an identical manner.
+                        </p>
+                        <p>
+                            Once all the data was properly rendering to the page, I decided to add some additional filtering buttons
+                            so that I could gain more experience making requests to the database.  Hopefully in the near future I can add some
+                            additional restaurants with some actual reviews to make the page a little more interesting.  Overall, the page flows
+                            well with the filters and the modals popping up over the base component.
+                        </p>
                     </div>
                 </div>
                 <div className="restaurant-button-container">
