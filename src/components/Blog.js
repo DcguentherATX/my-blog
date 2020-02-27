@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
-import colorWheel from '../../assets/images/color_wheel.jpg';
+import { Switch, Route } from 'react-router-dom';
+import FrontPage from './FrontPage';
+import ApplicationPlanning from './ApplicationPlanning';
+
+// import colorWheel from '../../assets/images/color_wheel.jpg';
 
 const Blog = () => {
 
@@ -18,7 +22,10 @@ const Blog = () => {
 
     return (
         <>
-            <div className="blog">
+            <Switch >
+                <Route path="/blog" component={FrontPage} />
+                <Route path="/application-planning" component={ApplicationPlanning} />
+            {/* <div className="blog">
                 <div className="top-container">
                     <h2 className="page-title">Blog</h2>
                     <div className="info-container">
@@ -85,7 +92,8 @@ const Blog = () => {
                         </div>                
                     </div>
                 </div>
-            </div>
+            </div> */}
+            </Switch>
         </>
     )
 }

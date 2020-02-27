@@ -8,6 +8,7 @@ import Gallery from './Gallery';
 import PhotoHunt from './PhotoHunt';
 import Dining from './Dining';
 import Blog from './Blog';
+import ApplicationPlanning from './ApplicationPlanning';
 import './App.css';
 
 const App = () => {
@@ -19,9 +20,10 @@ const App = () => {
                 <Route path="/" component={LandingPage} exact />
                 <Route path="/home" component={Home}/>
                 <Route path="/gallery" component={Gallery} />
-                <Route path="/photohunt" component={PhotoHunt} ></Route>
-                <Route path="/dining" component={Dining} ></Route>
-                <Route path="/blog" component={Blog} ></Route>
+                <Route path="/photohunt" component={PhotoHunt} />
+                <Route path="/dining" component={Dining} />
+                <Route path="/blog" component={Blog} />
+                <Route path="/application-planning" component={ApplicationPlanning} />
             </Switch>
             <Footer />
         </Router>
