@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import left from '../../assets/images/left-arrow.png';
 import right from '../../assets/images/right-arrow.png';
+import colorScheme from '../../assets/images/cooler-scheme.png'
 import home from '../../assets/images/home-icon.png';
 
 const ColorTheory = () => {
@@ -25,6 +26,9 @@ const ColorTheory = () => {
                     <Link to="/blog" ><img src={right} className="right" /></Link>
                 </div>
             <h1 className="article-title">Color Theory</h1>
+            <div className="color-image-container">
+                <img className="color-scheme" src={colorScheme} alt="color scheme" />
+            </div>
             <article className="article-columns">
                 <p>
                     Consequat reprehenderit amet voluptate qui duis nostrud ullamco aliqua reprehenderit irure velit aliqua sit. Ut esse proident labore laborum sint excepteur nisi ad fugiat et do. Eu irure amet ad sunt magna labore fugiat adipisicing et. Irure labore eu adipisicing incididunt ullamco aliquip minim tempor eiusmod veniam nostrud consectetur. Nisi adipisicing ipsum sunt eiusmod aliquip reprehenderit. Aute qui mollit officia in cillum voluptate irure adipisicing mollit mollit adipisicing. Dolor enim tempor consectetur commodo sit elit culpa consequat nisi velit.
