@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
 import LandingPage from './LandingPage';
 import Navigation from './Navigation';
 import Footer from './Footer';
@@ -11,11 +12,12 @@ import Blog from './Blog';
 import ApplicationPlanning from './ApplicationPlanning';
 import ColorTheory from './ColorTheory';
 import './App.css';
+const history = createHistory();
 
 const App = () => {
     return (
         <>
-        <Router >
+        <Router history={history}>
             <Navigation />
             <Switch>
                 <Route path="/" component={LandingPage} exact />
