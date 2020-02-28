@@ -554,6 +554,11 @@ h5 {
     height: auto;
 }
 
+.left-bottom,
+.right-bottom {
+    display: none;
+}
+
 .home-container {
     display:flex;
     justify-content: center;
@@ -803,6 +808,29 @@ h5 {
             display: none;
         }
 
+        .left {
+            display: none;
+        }
+
+        .right {
+            display: none;
+        }
+
+        .left-bottom,
+        .right-bottom {
+            display: block;
+            width: 2.5em;
+            height: auto;
+        }
+
+        .home-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .article-container {
+            padding: 0 1em 0 1em;
+        }
     }
     
     @media only screen and (max-width: 480px) {

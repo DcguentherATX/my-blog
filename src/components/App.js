@@ -9,6 +9,7 @@ import PhotoHunt from './PhotoHunt';
 import Dining from './Dining';
 import Blog from './Blog';
 import ApplicationPlanning from './ApplicationPlanning';
+import ColorTheory from './ColorTheory';
 import './App.css';
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
                 <Route path="/dining" component={Dining} />
                 <Route path="/blog" component={Blog} />
                 <Route path="/application-planning" component={ApplicationPlanning} />
+                <Route path="/color-theory" component={ColorTheory} />
             </Switch>
             <Footer />
         </Router>

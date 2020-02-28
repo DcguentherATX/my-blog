@@ -57,8 +57,8 @@ const FrontPage = () => {
                             <span>Amet esse incididunt sit labore excepteur fugiat aute exercitation. Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
                         </div>
                         <div className="blr3c2 blog-item">
-                            <img className="blog-image" src={colorWheel} />
-                            <h4 className="newspaper-title minor-title">Color Theory</h4>
+                            <Link to="/color-theory"><img className="blog-image" src={colorWheel} /></Link>
+                            <Link to="/color-theory" className="text-link"><h4 className="newspaper-title minor-title">Color Theory</h4></Link>
                             <span>Amet esse incididunt sit labore excepteur fugiat aute exercitation. Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam.</span>
                         </div>
                         <div className="blr3c3 blog-item">

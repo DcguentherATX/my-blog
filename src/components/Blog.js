@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import FrontPage from './FrontPage';
 import ApplicationPlanning from './ApplicationPlanning';
+import ColorTheory from './ColorTheory';
 
 // import colorWheel from '../../assets/images/color_wheel.jpg';
 
@@ -25,6 +26,7 @@ const Blog = () => {
             <Switch >
                 <Route path="/blog" component={FrontPage} />
                 <Route path="/application-planning" component={ApplicationPlanning} />
+                <Route path="/color-theory" component={ColorTheory} />
             {/* <div className="blog">
                 <div className="top-container">
                     <h2 className="page-title">Blog</h2>

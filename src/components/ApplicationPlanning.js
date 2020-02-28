@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import welcomeSketch from '../../assets/images/sketch-welcome.jpg';
 import gallerySketch from '../../assets/images/sketch-gallery.jpg';
@@ -25,8 +26,8 @@ const ApplicationPlanning = () => {
         <>
             <div className="article-container">
             <div className="arrow-wrap">
-                    <img src={left} className="left" />
-                    <img src={right} className="right" />
+                    <Link to="/blog"><img src={left} className="left" /></Link>
+                    <Link to="/color-theory"><img src={right} className="right" /></Link>
                 </div>
                 <h1 className="article-title">Application planning, designing, and sketching</h1>
                 <article className="article-body">
@@ -54,7 +55,9 @@ const ApplicationPlanning = () => {
                 </p>
                 </article>
                 <div className="home-container">
-                    <img src={home} className="home" />
+                    <Link to="/blog"><img src={left} className="left-bottom" /></Link>
+                    <Link to="/blog"><img src={home} className="home" /></Link>
+                    <Link to="/color-theory"><img src={right} className="right-bottom" /></Link>
                 </div>
             </div>
         </>
