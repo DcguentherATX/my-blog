@@ -6,6 +6,7 @@ import photoSketch from '../../assets/images/sketch-photo-hunt.jpg';
 import blogSketch from '../../assets/images/sketch-blog.jpg';
 import left from '../../assets/images/left-arrow.png';
 import right from '../../assets/images/right-arrow.png';
+import home from '../../assets/images/home-icon.png';
 
 const ApplicationPlanning = () => {
 
@@ -52,6 +53,9 @@ const ApplicationPlanning = () => {
                     Ea irure proident eu veniam occaecat magna duis anim incididunt veniam. Sit ea exercitation sunt aliquip qui ut reprehenderit. Elit proident esse qui excepteur proident culpa enim laborum aliquip eu.
                 </p>
                 </article>
+                <div className="home-container">
+                    <img src={home} className="home" />
+                </div>
             </div>
         </>
     )
