@@ -497,6 +497,12 @@ h5 {
     margin: 5px 0;
 }
 
+.article-columns {
+    columns: 3;
+    width: 75vw;
+    column-gap: 1em;
+}
+
 /* <------------ News Articles ------------> */
 
 .text-link {
@@ -831,6 +837,11 @@ h5 {
         .article-container {
             padding: 0 1em 0 1em;
         }
+
+        .article-columns {
+            columns: 2;
+            width: 95vw;
+        }
     }
     
     @media only screen and (max-width: 480px) {
@@ -937,6 +948,13 @@ h5 {
 
         .artist {
             display: none;
+        }
+
+        .article-columns {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90vw
         }
 
         #footer-container {

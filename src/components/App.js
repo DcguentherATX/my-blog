@@ -1,6 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import createHistory from 'history/createBrowserHistory';
+import { Router, Switch, Route } from 'react-router-dom';
+const createHistory = require("history").createBrowserHistory;
 import LandingPage from './LandingPage';
 import Navigation from './Navigation';
 import Footer from './Footer';
