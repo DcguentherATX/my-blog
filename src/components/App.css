@@ -511,10 +511,54 @@ h5 {
     /* font-size: 1.005em; */
 }
 
-.news-article {
+.article-title {
+    padding: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #EFF6EE;
     color: #253D60;
 }
+
+.article-body {
+    padding: .8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.basic-blog-img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.left {
+    top:50%;
+    left:8%;
+    position:fixed;
+    width: 2em;
+    height: auto;
+}
+
+.right {
+    top: 50%;
+    right: 5%;
+    position: fixed;
+    width: 2em;
+    height: auto;
+}
+
+/* .arrow-wrap {
+    position:relative; 
+    width:100%;
+    height: 40px;
+} */
 
 /* <------------ Footer ------------> */
 
