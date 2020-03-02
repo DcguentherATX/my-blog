@@ -30,12 +30,12 @@
                 <Modal.Body>
                     <Container>
                         <Row className="top-row">
-                            <Col>
+                            <Col md={12} lg={6} className="layout-box">
                             <div className="modal-img-container">
                                 <img className="modal-img" src={restaurant.img} />
                             </div>
                             </Col>
-                            <Col>
+                            <Col md={12} lg={6} className="layout-box">
                             <div className="rest-details">
                                     <span>Address: {restaurant.address}</span>
                                     <span>Phone: {restaurant.phone}</span>
@@ -49,12 +49,12 @@
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
+                            <Col md={12} lg={6} className="layout-box">
                                 <div className="modal-img-container">
                                     <img className="modal-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Open_street_map_central_london.svg/1600px-Open_street_map_central_london.svg.png"/>
                                 </div>
                             </Col>
-                            <Col>
+                            <Col md={12} lg={6} className="layout-box">
                             <p className="restaurant-info">
                                 {restaurant.description}
                             </p>

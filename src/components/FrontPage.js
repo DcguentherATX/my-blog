@@ -54,7 +54,7 @@ const FrontPage = () => {
                         </div>  
                         <div className="b1r2c4 blog-item">
                             <h3 className="newspaper-title">Building a Gallery with CSS Grid</h3>
-                            <span>Amet esse incididunt sit labore excepteur fugiat aute exercitation. Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
+                            <span className="minor-span">Amet esse incididunt sit labore excepteur fugiat aute exercitation. Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
                         </div>
                         <div className="blr3c2 blog-item">
                             <Link to="/color-theory"><img className="blog-image" src={colorWheel} /></Link>
@@ -64,12 +64,12 @@ const FrontPage = () => {
                         <div className="blr3c3 blog-item">
                             <img className="blog-image" src={colorWheel} />
                             <h4 className="newspaper-title minor-title">Environmental Variables</h4>
-                            <span>Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
+                            <span className="minor-span">Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
                         </div>
                         <div className="blr3c4 blog-item">
                             <img className="blog-image" src={colorWheel} />
                             <h4 className="newspaper-title minor-title">React Router</h4>
-                            <span>Amet esse incididunt sit labore excepteur fugiat aute exercitation. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
+                            <span className="minor-span">Amet esse incididunt sit labore excepteur fugiat aute exercitation. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
                         </div>                
                     </div>
                 </div>

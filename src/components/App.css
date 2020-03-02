@@ -439,6 +439,10 @@ h5 {
     width: 7em;
 }
 
+.layout-box {
+    margin-bottom: 2em;
+}
+
 /* <------------ Blog ------------> */
 
 .blog-container {
@@ -463,6 +467,7 @@ h5 {
 .title-image {
     max-width: 100%;
     height: auto;
+    padding-bottom: 1em;
 }
 
 .headliner {
@@ -475,11 +480,15 @@ h5 {
 .blog-image {
     max-width: 100%;
     height: auto;
+    margin-bottom: 1em;
 }
 
 .blog-item {
     background-color: #EFF6EE;
     padding: 10px 10px 20px 10px;
+    text-overflow: ellipsis;
+    /* white-space: nowrap; */
+    overflow: hidden;
 }
 
 .minor-title {
@@ -557,15 +566,15 @@ h5 {
 }
 
 .left {
-    top:50%;
-    left:8%;
+    top:47%;
+    left:5%;
     position:fixed;
     width: 2em;
     height: auto;
 }
 
 .right {
-    top: 50%;
+    top:47%;
     right: 5%;
     position: fixed;
     width: 2em;
@@ -587,6 +596,12 @@ h5 {
 .home {
     width: 2.5em;
     height: auto;
+}
+
+.minor-span {
+    max-height: 6em;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 /* <------------ Footer ------------> */
@@ -673,7 +688,7 @@ h5 {
         display: grid;
         grid-gap: .1em;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: auto auto 450px;
         /* height: 100%; */
     }
     
@@ -930,6 +945,7 @@ h5 {
             text-align: start;
             letter-spacing: .02em;
             font: 1.8em;
+            margin-bottom: 0;
         }
     
         p {
