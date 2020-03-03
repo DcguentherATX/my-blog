@@ -27,11 +27,11 @@ const Restaurant = (props) => {
                     <Card.Title>{props.restaurant.name}</Card.Title>
                     <Card.Text className="restaurant-details">
                         <span>{props.restaurant.type}</span>
-                        <div className="rating-container">
-                            <div className="rating">
+                        <span className="rating-container">
+                            <span className="rating">
                                 Rating: 
-                            </div> 
-                            <div>                     
+                            </span> 
+                            <span>                     
                             <StarRatings
                                 rating={props.restaurant.stars}
                                 starRatedColor="#FFFD77"
@@ -40,8 +40,8 @@ const Restaurant = (props) => {
                                 numberOfStars={5}
                                 name="rating"
                             />
-                            </div>    
-                        </div>
+                            </span>    
+                        </span>
                         {/* <span>Rating: {props.restaurant.stars}</span> */}
                     </Card.Text>
                     <Button onClick={handleShowModal} variant="outline-light">More Info</Button>

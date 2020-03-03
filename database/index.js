@@ -15,6 +15,7 @@ const restuarantSchema = mongoose.Schema({
     phone: String,
     address: String,
     website: String,
+    link: String,
     hoursOfOperation: [String],
     description: String
 })
