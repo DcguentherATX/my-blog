@@ -39,7 +39,7 @@
                             <div className="rest-details">
                                     <span>Address: {restaurant.address}</span>
                                     <span>Phone: {restaurant.phone}</span>
-                                    <span>Website: <a href={fullSite}>{restaurant.website}</a></span>
+                                    <span>Website: <a href={restaurant.link} target="_blank">{restaurant.website}</a></span>
                                     <div>Hours:
                                         <div className="hours-container">
                                             {restaurant.hoursOfOperation.map((time, i) => reformatHours(time, i))}
