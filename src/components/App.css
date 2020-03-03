@@ -399,6 +399,15 @@ h5 {
     padding: 20px;
 }
 
+.rating-container {
+    display: flex;
+    align-items: center;
+}
+
+.rating {
+    margin-right:5px
+}
+
 .filter-button {
     color: #EFF6EE;
     border-color: #EFF6EE;
