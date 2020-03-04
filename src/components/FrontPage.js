@@ -58,8 +58,8 @@ const FrontPage = () => {
                         </div>
                         <div className="blr3c2 blog-item">
                             <Link to="/color-theory"><img className="blog-image" src={colorWheel} /></Link>
-                            <Link to="/color-theory" className="text-link"><h4 className="newspaper-title minor-title">Color Theory</h4></Link>
-                            <span>Amet esse incididunt sit labore excepteur fugiat aute exercitation. Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam.</span>
+                            <Link to="/color-theory" className="text-link"><h4 className="newspaper-title minor-title">Colors and Fonts</h4></Link>
+                            <span>This article describes how I selected the colors for the application in addition to the font direction.  There are some helpful resources included that aided me along the way in making my decision.</span>
                         </div>
                         <div className="blr3c3 blog-item">
                             <img className="blog-image" src={colorWheel} />

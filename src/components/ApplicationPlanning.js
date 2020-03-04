@@ -90,6 +90,9 @@ const ApplicationPlanning = () => {
                     structure of my data.  MongoDB would work well for that situation and I knew that I could deploy with Mongo Atlas.
                     Once all this was organized, I moved on to creating a color scheme and implementing my design.
                 </p>
+                <p>
+                    All code for this application can be viewed on my Github linked <a href="https://github.com/DcguentherATX/my-blog" target="_blank">here</a>!
+                </p>
                 </article>
                 <div className="home-container">
                     <Link to="/blog"><img src={left} className="left-bottom" /></Link>
