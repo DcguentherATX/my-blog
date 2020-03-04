@@ -1,5 +1,12 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+
+import harmony from '../../assets/images/color_theory.png';
+import serif from '../../assets/images/serif.png';
+import display from '../../assets/images/display_fonts.jpg';
 
 import left from '../../assets/images/left-arrow.png';
 import right from '../../assets/images/right-arrow.png';
@@ -73,6 +80,9 @@ const ColorTheory = () => {
                     located at the top of the article, or, since you are already on my page, you can easily click around.
                 </p>
             </article>
+            <div className="art-image-container">
+                <img className="color-image" src={harmony} alt="color schemes examples" />
+            </div>
             <h2>Fonts</h2>
             <article className="article-columns">
                 <p>
@@ -107,6 +117,20 @@ const ColorTheory = () => {
                     supplied both of these fonts free of charge.  Another site that has excellent font varieties is <a href="https://www.fontsquirrel.com/" target="_blank">FontSquirrel</a>.
                 </p>
             </article>
+            <div className="art-image-container">
+                <Container>
+                    <Row>
+                        <Col className="font-col" md={12} lg={8}>
+                        <h4>Serif</h4>
+                            <img className="color-image" src={serif} alt="serif vs. sans-serif fonts" />
+                        </Col>
+                        <Col className="font-col" md={12} lg={4}>
+                        <h4>Display</h4>
+                            <img className="color-image" src={display} alt="display fonts" />
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
             <div className="home-container">
                     <Link to="/application-planning"><img src={left} className="left-bottom" /></Link>
                     <Link to="/blog"><img src={home} className="home" /></Link>
