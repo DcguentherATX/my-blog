@@ -45,10 +45,8 @@ h3 {
 h4 {
     font-family: 'Cormorant Garamond', Helvetica, Arial, serif;
     font-weight: 400;
-    letter-spacing: .03em;
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 1em;
+    letter-spacing: .02em;
+    font-size: 1.8em;
 }
 
 h5 {
@@ -647,6 +645,11 @@ h5 {
 
 .font-col {
     margin: 2em 0;
+}
+
+.font-title {
+    text-align: center;
+    margin-bottom: 1em
 }
 
 /* <------------ Footer ------------> */

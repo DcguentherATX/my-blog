@@ -121,11 +121,11 @@ const ColorTheory = () => {
                 <Container>
                     <Row>
                         <Col className="font-col" md={12} lg={8}>
-                        <h4>Serif</h4>
+                        <h4 className="font-title">Serif</h4>
                             <img className="color-image" src={serif} alt="serif vs. sans-serif fonts" />
                         </Col>
                         <Col className="font-col" md={12} lg={4}>
-                        <h4>Display</h4>
+                        <h4 className="font-title">Display</h4>
                             <img className="color-image" src={display} alt="display fonts" />
                         </Col>
                     </Row>
