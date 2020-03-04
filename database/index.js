@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 const restaurants = require('./restaurants.json');
 require('dotenv').config();
-const mongoUri = process.env.MONGO_URI
+const mongoUri = process.env.MONGO_URI;
+const option = { restaurantName: 'Kome', user: 'David Guenther'};
 
 // mongoose.connect(`mongodb://localhost/Restaurants`, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connect(`${mongoUri}`, { useNewUrlParser: true, useUnifiedTopology: true });
@@ -10,7 +11,7 @@ mongoose.connect(`${mongoUri}`, { useNewUrlParser: true, useUnifiedTopology: tru
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
-const restuarantSchema = mongoose.Schema({
+const restaurantSchema = mongoose.Schema({
     name: String,
     img: String,
     cuisine: String,
@@ -24,7 +25,13 @@ const restuarantSchema = mongoose.Schema({
     description: String
 })
 
-let Restaurants = mongoose.model('Restaurants', restuarantSchema);
+// const requestSchema = mongoose.Schema({
+//     restaurantName: String,
+//     user: String
+// })
+
+let Restaurants = mongoose.model('Restaurants', restaurantSchema);
+// let Request = mongoose.model('Request', requestSchema);
 
 const seedDatabase = (data) => {
     Restaurants.insertMany(data, (err) => {
@@ -34,6 +41,16 @@ const seedDatabase = (data) => {
             console.log('data inserted properly into database');
         }
     })
+}
+
+const createRequest = (data) => {
+    Request.create(data, (err) => {
+        if (err) {
+            console.log('req err', err);
+        } else {
+            console.log('req success');
+        }
+    });
 }
 
 const getRestaurants = (obj, cb) => {
@@ -58,5 +75,7 @@ const getCuisine = ({cuisine}, cb) => {
 }
 
 // seedDatabase(restaurants);
+
+// createRequest(option);
 
 module.exports = { getRestaurants, getCuisine };
