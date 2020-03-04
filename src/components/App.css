@@ -566,6 +566,7 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 98vw;
 }
 
 .basic-blog-img {
@@ -611,6 +612,14 @@ h5 {
     max-height: 6em;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+/* <------------ Planning ------------> */
+
+.planning-image-container {
+    display: flex;
+    margin: 15px 0px;
+    max-width: 95vw;
 }
 
 /* <------------ Footer ------------> */
@@ -1010,6 +1019,11 @@ h5 {
 
         #footer-container {
             justify-content: flex-end;
+        }
+
+        .planning-image-container {
+            flex-direction: column;
+            align-items: center;
         }
 
     }

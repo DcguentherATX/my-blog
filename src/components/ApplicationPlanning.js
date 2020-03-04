@@ -37,19 +37,23 @@ const ApplicationPlanning = () => {
                 <p>
                     Tempor aliqua sit eiusmod eiusmod anim proident velit incididunt dolore est. Do enim aliquip qui adipisicing qui exercitation dolor. Laborum tempor labore commodo consequat ipsum esse aliqua excepteur magna et. Culpa magna quis irure minim nulla tempor eu. Veniam quis Lorem voluptate dolore cillum dolore aliquip qui consectetur cillum.
                 </p>
-                <img className="basic-blog-img" src={welcomeSketch} alt="welcome sketch"/>
+                <div className="planning-image-container">
+                    <img className="basic-blog-img" src={welcomeSketch} alt="welcome sketch"/>
+                    <img className="basic-blog-img" src={gallerySketch} alt="gallery sketch"/>
+                </div>
                 <p>
                     Velit reprehenderit magna veniam tempor sit proident incididunt aliqua velit aute pariatur amet labore. Non consectetur aliquip culpa ea cupidatat fugiat cupidatat id et. Consequat ullamco fugiat elit Lorem ea proident quis fugiat exercitation nostrud. Mollit nulla in ea reprehenderit est enim.
                 </p>
-                <img className="basic-blog-img" src={gallerySketch} alt="gallery sketch"/>
                 <p>
                     Elit laborum Lorem laboris qui eu consequat adipisicing ad consequat deserunt aute. Minim excepteur laboris ad exercitation in nulla cillum laboris. Ipsum irure labore mollit nulla dolor. Ea sit cillum fugiat cupidatat. Incididunt nulla in culpa irure laborum. Adipisicing officia deserunt magna duis. Officia consequat velit veniam ea duis.
                 </p>
-                <img className="basic-blog-img" src={photoSketch} alt="photo hunt sketch"/>
+                <div className="planning-image-container">
+                    <img className="basic-blog-img" src={photoSketch} alt="photo hunt sketch"/>
+                    <img className="basic-blog-img" src={blogSketch} alt="blogSketch"/>
+                </div>
                 <p>
                     Officia non dolor Lorem non amet sint. Adipisicing officia duis nisi cupidatat eiusmod adipisicing. Officia ad enim commodo excepteur nisi ea nisi aliquip officia aliqua. Mollit commodo cillum cillum excepteur exercitation elit reprehenderit. Amet enim pariatur magna proident excepteur esse deserunt culpa quis fugiat voluptate occaecat. Irure laborum eiusmod aliquip eu esse reprehenderit adipisicing labore nostrud nulla Lorem veniam quis aliqua.
                 </p>
-                <img className="basic-blog-img" src={blogSketch} alt="blogSketch"/>
                 <p>
                     Ea irure proident eu veniam occaecat magna duis anim incididunt veniam. Sit ea exercitation sunt aliquip qui ut reprehenderit. Elit proident esse qui excepteur proident culpa enim laborum aliquip eu.
                 </p>
