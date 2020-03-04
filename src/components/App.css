@@ -458,7 +458,6 @@ h5 {
     color: #253D60;
     background-color: #EFF6EE;
     overflow-x: hidden;
-    max-height: 100vh;
 }
 
 .blog-grid {
@@ -496,7 +495,6 @@ h5 {
     background-color: #EFF6EE;
     padding: 10px 10px 20px 10px;
     text-overflow: ellipsis;
-    /* white-space: nowrap; */
     overflow: hidden;
 }
 
@@ -519,6 +517,13 @@ h5 {
     columns: 3;
     width: 75vw;
     column-gap: 1em;
+}
+
+.md-article {
+    background-color: #EFF6EE;
+    padding: 10px 10px 20px 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .color-image-container {
@@ -608,7 +613,7 @@ h5 {
 }
 
 .minor-span {
-    max-height: 6em;
+    max-height: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -629,6 +634,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 2px;
     padding-top: 15px;
     padding-right: 20px;
     height: 75px;
@@ -705,7 +711,7 @@ h5 {
         display: grid;
         grid-gap: .1em;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto auto 450px;
+        grid-template-rows: minmax(0, 350px) minmax(0, 350px) minmax(0, 1fr);
         /* height: 100%; */
     }
     
@@ -1024,5 +1030,4 @@ h5 {
             flex-direction: column;
             align-items: center;
         }
-
     }

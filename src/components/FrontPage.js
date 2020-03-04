@@ -56,20 +56,20 @@ const FrontPage = () => {
                             <h3 className="newspaper-title">Building a Gallery with CSS Grid</h3>
                             <span className="minor-span">Amet esse incididunt sit labore excepteur fugiat aute exercitation. Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
                         </div>
-                        <div className="blr3c2 blog-item">
+                        <div className="blr3c2 md-article">
                             <Link to="/color-theory"><img className="blog-image" src={colorWheel} /></Link>
                             <Link to="/color-theory" className="text-link"><h4 className="newspaper-title minor-title">Colors and Fonts</h4></Link>
                             <span>This article describes how I selected the colors for the application in addition to the font direction.  There are some helpful resources included that aided me along the way in making my decision.</span>
                         </div>
-                        <div className="blr3c3 blog-item">
+                        <div className="blr3c3 md-article">
                             <img className="blog-image" src={colorWheel} />
                             <h4 className="newspaper-title minor-title">Environmental Variables</h4>
-                            <span className="minor-span">Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
+                            <span className="minor-span">Commodo anim ut officia aute deserunt proident et exercitation aute consequat et fugiat.  Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
                         </div>
-                        <div className="blr3c4 blog-item">
+                        <div className="blr3c4 md-article">
                             <img className="blog-image" src={colorWheel} />
                             <h4 className="newspaper-title minor-title">React Router</h4>
-                            <span className="minor-span">Amet esse incididunt sit labore excepteur fugiat aute exercitation. Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
+                            <span className="minor-span">Cillum tempor fugiat amet nostrud reprehenderit est velit labore aute. Deserunt incididunt amet voluptate mollit anim esse veniam. Dolore elit est consectetur labore reprehenderit officia labore.</span>
                         </div>                
                     </div>
                 </div>
