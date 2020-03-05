@@ -3,11 +3,13 @@ import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button';
 import Restaurant from './Restaurant';
 import RequestForm from './RequestForm';
+import PendingReview from './PendingReview';
 import Axios from 'axios';
 
 const Dining = () => {
     const [restaurants, setRestaurants] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
+    const [pendingReviews, setPendingReviews] = useState([]);
 
     useEffect(() => {
         // keeps nav and footer visible on refresh
@@ -28,6 +30,14 @@ const Dining = () => {
         .catch((err) => {
             console.log(err);
         })
+
+        Axios.get('/review')
+            .then((response) => {
+                setPendingReviews(response.data);
+            })
+            .catch((err) => {
+                console.log('err');
+            })
     }, []);
 
     const handleChange = (e) => {
@@ -82,8 +92,12 @@ const Dining = () => {
         if (restaurants.length === 0) {
             return (
                 <div className="form-container">
-                    <div>No matches found!  If you would like to submit a request for a review, please complete the form below:</div>
+                    <p className="no-match">No matches found!  If you would like to submit a request for a review of {searchTerm}, please complete the form below:</p>
                     <RequestForm />
+                    <h2 className="pending-title">Pending Reviews</h2>
+                    <div className="review-list">
+                        {pendingReviews.map((rev, i) => <PendingReview review={rev} key={i} item={i+1}/>)}
+                    </div>
                 </div>
             )
         } else {
@@ -141,8 +155,7 @@ const Dining = () => {
                     </div>
                 </div>
                 <div className="dining-container">
-                    <RequestForm />
-                    {/* {getRestaurants(restaurants)} */}
+                    {getRestaurants(restaurants)}
                 </div>
             </div>
         </>

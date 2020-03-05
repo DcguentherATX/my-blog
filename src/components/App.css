@@ -443,7 +443,12 @@ h5 {
     align-items: center;
 }
 
-.request-form {
+.no-match {
+    margin: 20px 0;
+}
+
+.request-form,
+.review-container {
     display: flex;
     flex-direction: column;
     background-color: #253D60;
@@ -477,6 +482,29 @@ h5 {
     width: 20em;
     height: 10em;
     text-overflow: wrap;
+}
+
+.pending-title {
+    margin: 25px;
+}
+
+.review {
+    display: flex;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+}
+
+.list-number {
+    padding-right: 1em;
+}
+
+.review-item {
+    width: 300px;
+    padding-right: 2vw;
 }
 
 /* <------------ Modal ------------> */

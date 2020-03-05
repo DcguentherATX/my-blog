@@ -56,6 +56,16 @@ const createRequest = ( {review} ) => {
     });
 }
 
+const getReviews = ( obj, cb ) => {
+    Request.find(obj, (err, reviews) => {
+        if (err) {
+            console.log('error reading reviews', err);
+        } else {
+            cb(null, reviews);
+        }
+    })
+}
+
 const getRestaurants = (obj, cb) => {
     Restaurants.find(obj, (err, restaurants) => {
         if (err) {
@@ -87,6 +97,7 @@ const searchRestaurants = ({ name }, cb) => {
     })
 }
 
+
 // seedDatabase(restaurants);
 
-module.exports = { getRestaurants, getCuisine, searchRestaurants, createRequest };
+module.exports = { getRestaurants, getCuisine, searchRestaurants, createRequest, getReviews };

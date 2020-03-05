@@ -86,13 +86,13 @@ app.get('/restaurantSearch', (req, res) => {
             console.log(err);
             res.end();
         } else {
-            console.log('retrieved', data);
+            // console.log('retrieved', data);
             res.send(data);
         }
     })
 });
 
-app.post('/request', (req, res) => {
+app.post('/review', (req, res) => {
     const { params } = req.body;
 
     db.createRequest({review: params}, (err, data) => {
@@ -102,6 +102,19 @@ app.post('/request', (req, res) => {
         } else {
             console.log('request received');
             res.send(data);
+        }
+    })
+})
+
+app.get('/review', (req, res) => {
+    // console.log('review search');
+    db.getReviews({}, (err, data) => {
+        if (err) {
+            console.log('error in server for reviews');
+            res.end();
+        } else {
+            // console.log('reviews searched');
+            res.send(data)
         }
     })
 })

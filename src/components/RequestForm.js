@@ -25,7 +25,7 @@ const RequestForm = () => {
     }
 
     const handleSubmit = () => {
-        Axios.post('/request', {
+        Axios.post('/review', {
             params: {
                 name: name,
                 restaurant: restaurant,
