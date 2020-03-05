@@ -40,6 +40,7 @@ const Dining = () => {
             }
         })
         .then((response) => {
+            console.log(response.data)
             setRestaurants(response.data);
         })
         .catch((err) => {
@@ -74,6 +75,21 @@ const Dining = () => {
             })
         }
     }
+
+    const getRestaurants = (restaurants) => {
+        // console.log(restaurants.length);
+        if (restaurants.length === 0) {
+            return (
+                <div>No matches found.</div>
+            )
+        } else {
+            return (
+                <CardDeck className="entire-deck">
+                    {restaurants.map((restaurant, index) => <Restaurant restaurant={restaurant} key={index} />)}
+                </CardDeck>
+            )
+        }
+    } 
 
     return (
         <>
@@ -116,14 +132,12 @@ const Dining = () => {
                         <label className="label">
                             Search:
                         </label>
-                        <input className="search" type="text" value={searchTerm} onChange={handleChange} placeholder="search" />
+                        <input className="search" type="text" value={searchTerm} onChange={handleChange} placeholder="restaurant name" />
                         <Button onClick={() => handleSubmit()} variant="outline-light" >Submit</Button>
                     </div>
                 </div>
                 <div className="dining-container">
-                    <CardDeck className="entire-deck">
-                        {restaurants.map((restaurant, index) => <Restaurant restaurant={restaurant} key={index} />)}
-                    </CardDeck>
+                    {getRestaurants(restaurants)}
                 </div>
             </div>
         </>
