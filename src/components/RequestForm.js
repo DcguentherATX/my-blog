@@ -3,25 +3,45 @@ import Button from 'react-bootstrap/Button';
 
 const RequestForm = () => {
 
+    const [name, setName] = useState('');
+    const [restaurant, setRestaurant] = useState('');
+    const [location, setLocation] = useState('');
+    const [interests, setInterests] = useState('');
+
+    const handleChange = (e) => {
+        if (e.target.name === 'name') {
+            setName(e.target.value);
+        }
+        if (e.target.name === 'restaurant') {
+            setRestaurant(e.target.value);
+        }
+        if (e.target.name === 'location') {
+            setLocation(e.target.value);
+        }
+        if (e.target.name === 'interests') {
+            setInterests(e.target.value);
+        }
+    }
+
     return (
         <div>
             <form className="request-form">
                 <h2>Review Request Form</h2>
                 <div className="entry-field">
-                    <label className="form-label" for="name">Your Name: </label>
-                    <input className="text-input" id="name" name="name" type="text" placeholder="your name"></input>
+                    <label className="form-label" htmlFor="name">Your Name: </label>
+                    <input className="text-input" id="name" name="name" type="text" onChange={handleChange} placeholder="your name"></input>
                 </div>
                 <div className="entry-field">
-                    <label className="form-label" for="restaurant">Restaurant Name: </label>
-                    <input className="text-input" id="restaurant" name="restaurant" type="text" placeholder="restaurant name"></input>
+                    <label className="form-label" htmlFor="restaurant">Restaurant Name: </label>
+                    <input className="text-input" id="restaurant" name="restaurant" type="text" onChange={handleChange} placeholder="restaurant name"></input>
                 </div>
                 <div className="entry-field">
-                    <label className="form-label" for="location">Location: </label>
-                    <input className="text-input" id="location" name="location" type="text" placeholder="city, state"></input>
+                    <label className="form-label" htmlFor="location">Location: </label>
+                    <input className="text-input" id="location" name="location" type="text" onChange={handleChange} placeholder="city, state"></input>
                 </div>
                 <div className="entry-field">
-                    <label className="form-label" for="interests">Food to Review: </label>
-                    <textarea className="text-area" id="interests" name="interests" wrap="soft" maxLength="500em" placeholder="enter dishes to review"></textarea>
+                    <label className="form-label" htmlFor="interests">Food to Review: </label>
+                    <textarea className="text-area" id="interests" name="interests" wrap="soft" maxLength="500em" onChange={handleChange} placeholder="enter dishes to review"></textarea>
                 </div>
                 <div className="button-container">
                     <Button variant="outline-light">Submit Request</Button>
