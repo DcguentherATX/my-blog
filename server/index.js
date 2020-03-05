@@ -94,7 +94,16 @@ app.get('/restaurantSearch', (req, res) => {
 
 app.post('/request', (req, res) => {
     const { params } = req.body;
-    console.log(params);
+
+    db.createRequest({review: params}, (err, data) => {
+        if (err) {
+            console.log(err);
+            res.end();
+        } else {
+            console.log('request received');
+            res.send(data);
+        }
+    })
 })
 
 app.get('/*', function(req, res) {

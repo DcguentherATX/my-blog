@@ -25,13 +25,15 @@ const restaurantSchema = mongoose.Schema({
     description: String
 })
 
-// const requestSchema = mongoose.Schema({
-//     restaurantName: String,
-//     user: String
-// })
+const requestSchema = mongoose.Schema({
+    name: String,
+    restaurant: String,
+    location: String,
+    interests: String
+})
 
 let Restaurants = mongoose.model('Restaurants', restaurantSchema);
-// let Request = mongoose.model('Request', requestSchema);
+let Request = mongoose.model('Request', requestSchema);
 
 const seedDatabase = (data) => {
     Restaurants.insertMany(data, (err) => {
@@ -43,8 +45,9 @@ const seedDatabase = (data) => {
     })
 }
 
-const createRequest = (data) => {
-    Request.create(data, (err) => {
+const createRequest = ( {review} ) => {
+    // console.log('db review', review);
+    Request.create(review, (err) => {
         if (err) {
             console.log('req err', err);
         } else {
@@ -86,6 +89,4 @@ const searchRestaurants = ({ name }, cb) => {
 
 // seedDatabase(restaurants);
 
-// createRequest(option);
-
-module.exports = { getRestaurants, getCuisine, searchRestaurants };
+module.exports = { getRestaurants, getCuisine, searchRestaurants, createRequest };
