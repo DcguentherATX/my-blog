@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Button from 'react-bootstrap/Button';
 import Restaurant from './Restaurant';
+import RequestForm from './RequestForm';
 import Axios from 'axios';
 
 const Dining = () => {
@@ -80,7 +81,10 @@ const Dining = () => {
         // console.log(restaurants.length);
         if (restaurants.length === 0) {
             return (
-                <div>No matches found.</div>
+                <div className="form-container">
+                    <div>No matches found!  If you would like to submit a request for a review, please complete the form below:</div>
+                    <RequestForm />
+                </div>
             )
         } else {
             return (
@@ -137,7 +141,8 @@ const Dining = () => {
                     </div>
                 </div>
                 <div className="dining-container">
-                    {getRestaurants(restaurants)}
+                    <RequestForm />
+                    {/* {getRestaurants(restaurants)} */}
                 </div>
             </div>
         </>
