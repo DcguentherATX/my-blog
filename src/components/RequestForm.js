@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import Axios from 'axios';
 
 const RequestForm = () => {
 
@@ -23,6 +24,23 @@ const RequestForm = () => {
         }
     }
 
+    const handleSubmit = () => {
+        Axios.post('/request', {
+            params: {
+                name: name,
+                restaurant: restaurant,
+                location: location,
+                interests: interests
+            }
+        })
+        .then((response) => {
+            console.log(response);
+        })
+        .catch((err) => {
+            console.log(err);
+        })
+    }
+
     return (
         <div>
             <form className="request-form">
@@ -44,7 +62,7 @@ const RequestForm = () => {
                     <textarea className="text-area" id="interests" name="interests" wrap="soft" maxLength="500em" onChange={handleChange} placeholder="enter dishes to review"></textarea>
                 </div>
                 <div className="button-container">
-                    <Button variant="outline-light">Submit Request</Button>
+                    <Button variant="outline-light" onClick={handleSubmit} >Submit Request</Button>
                 </div>
             </form>
         </div>

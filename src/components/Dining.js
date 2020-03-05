@@ -41,7 +41,7 @@ const Dining = () => {
             }
         })
         .then((response) => {
-            console.log(response.data)
+            // console.log(response.data)
             setRestaurants(response.data);
         })
         .catch((err) => {

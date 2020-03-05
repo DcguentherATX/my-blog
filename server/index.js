@@ -92,6 +92,11 @@ app.get('/restaurantSearch', (req, res) => {
     })
 });
 
+app.post('/request', (req, res) => {
+    const { params } = req.body;
+    console.log(params);
+})
+
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, '../public/index.html'), function(err) {
         if (err) {
