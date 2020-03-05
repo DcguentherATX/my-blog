@@ -74,8 +74,18 @@ const getCuisine = ({cuisine}, cb) => {
     })
 }
 
+const searchRestaurants = ({ name }, cb) => {
+    Restaurants.find({name: name}, (err, restaurant) => {
+        if(err) {
+            console.log('error finding restaurant', err);
+        } else {
+            cb(null, restaurant);
+        }
+    })
+}
+
 // seedDatabase(restaurants);
 
 // createRequest(option);
 
-module.exports = { getRestaurants, getCuisine };
+module.exports = { getRestaurants, getCuisine, searchRestaurants };

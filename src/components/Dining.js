@@ -34,7 +34,17 @@ const Dining = () => {
     }
 
     const handleSubmit = () => {
-        console.log('submission');
+        Axios.get('/restaurantSearch', {
+            params: {
+                name: searchTerm
+            }
+        })
+        .then((response) => {
+            setRestaurants(response.data);
+        })
+        .catch((err) => {
+            console.log('error with restuarant search', err);
+        })
     }
 
     const handleClick = (e) => {
@@ -107,7 +117,7 @@ const Dining = () => {
                             Search:
                         </label>
                         <input className="search" type="text" value={searchTerm} onChange={handleChange} placeholder="search" />
-                        <Button onClick={(searchTerm) => handleSubmit(searchTerm)} variant="outline-light" >Submit</Button>
+                        <Button onClick={() => handleSubmit()} variant="outline-light" >Submit</Button>
                     </div>
                 </div>
                 <div className="dining-container">

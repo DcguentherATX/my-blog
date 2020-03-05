@@ -76,7 +76,21 @@ app.get('/cuisine', (req, res) => {
             res.send(data);
         }
     })
-})
+});
+
+app.get('/restaurantSearch', (req, res) => {
+    const { name } = req.query;
+    
+    db.searchRestaurants({name: name}, (err, data) => {
+        if (err) {
+            console.log(err);
+            res.end();
+        } else {
+            console.log('retrieved', data);
+            res.send(data);
+        }
+    })
+});
 
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, '../public/index.html'), function(err) {
