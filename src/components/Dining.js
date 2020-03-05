@@ -6,6 +6,7 @@ import Axios from 'axios';
 
 const Dining = () => {
     const [restaurants, setRestaurants] = useState([]);
+    const [searchTerm, setSearchTerm] = useState('');
 
     useEffect(() => {
         // keeps nav and footer visible on refresh
@@ -26,7 +27,15 @@ const Dining = () => {
         .catch((err) => {
             console.log(err);
         })
-    }, [])
+    }, []);
+
+    const handleChange = (e) => {
+        setSearchTerm(e.target.value);
+    }
+
+    const handleSubmit = () => {
+        console.log('submission');
+    }
 
     const handleClick = (e) => {
         let searchTerm = e.target.getAttribute('value');
@@ -91,6 +100,15 @@ const Dining = () => {
                     <Button className="filter-button" variant="outline-light" value="European" onClick={handleClick}>European</Button>
                     <Button className="filter-button" variant="outline-light" value="Latin" onClick={handleClick}>Latin</Button>
                     <Button className="filter-button" variant="outline-light" value="BBQ" onClick={handleClick}>BBQ</Button>
+                </div>
+                <div className="restaurant-search">
+                    <div className="search-bar">
+                        <label className="label">
+                            Search:
+                        </label>
+                        <input className="search" type="text" value={searchTerm} onChange={handleChange} placeholder="search" />
+                        <Button onClick={(searchTerm) => handleSubmit(searchTerm)} variant="outline-light" >Submit</Button>
+                    </div>
                 </div>
                 <div className="dining-container">
                     <CardDeck className="entire-deck">

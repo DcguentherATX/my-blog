@@ -426,6 +426,15 @@ h5 {
     border-color: #EFF6EE;
 }
 
+.restaurant-search {
+    color: #EFF6EE;
+    background-color: #16072D;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* <------------ Modal ------------> */
 
 .modal-img {
