@@ -88,7 +88,9 @@ const getCuisine = ({cuisine}, cb) => {
 }
 
 const searchRestaurants = ({ name }, cb) => {
-    Restaurants.find({name: name}, (err, restaurant) => {
+    const regex = new RegExp(["^.*", name, ".*$"].join(""), "i");
+    // console.log(regex);
+    Restaurants.find({ name: regex }, (err, restaurant) => {
         if(err) {
             console.log('error finding restaurant', err);
         } else {
