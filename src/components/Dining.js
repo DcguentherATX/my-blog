@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Restaurant from './Restaurant';
 import RequestForm from './RequestForm';
-import PendingReview from './PendingReview';
 import Axios from 'axios';
 
 const Dining = () => {
     const [restaurants, setRestaurants] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
-    const [pendingReviews, setPendingReviews] = useState([]);
 
     useEffect(() => {
         // keeps nav and footer visible on refresh
@@ -34,13 +29,13 @@ const Dining = () => {
             console.log(err);
         })
 
-        Axios.get('/review')
-            .then((response) => {
-                setPendingReviews(response.data);
-            })
-            .catch((err) => {
-                console.log('err');
-            })
+        // Axios.get('/review')
+        //     .then((response) => {
+        //         setPendingReviews(response.data);
+        //     })
+        //     .catch((err) => {
+        //         console.log('err');
+        //     })
     }, []);
 
     const handleChange = (e) => {
@@ -98,7 +93,7 @@ const Dining = () => {
                     <p className="no-match">No matches found!  If you would like to submit a request for a review of a restaurant, please complete the form below.</p>
                     <p>A list of restaurants pending review is listed below the form.  Check out where other foodies are interested in eating.</p>
                     <RequestForm />
-                    <h2 className="pending-title">Pending Reviews</h2>
+                    {/* <h2 className="pending-title">Pending Reviews</h2>
                     <Container className="review-list">
                         <Row className="title-row">
                             <Col sm={6} md={3} lg={3}>
@@ -115,7 +110,7 @@ const Dining = () => {
                             </Col>
                         </Row>
                         {pendingReviews.map((rev, i) => <PendingReview review={rev} key={i} item={i+1}/>)}
-                    </Container>
+                    </Container> */}
                 </div>
             )
         } else {

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PendingReviews from './PendingReviews';
 import Button from 'react-bootstrap/Button';
 import Axios from 'axios';
 
@@ -8,7 +9,19 @@ const RequestForm = () => {
     const [restaurant, setRestaurant] = useState('');
     const [location, setLocation] = useState('');
     const [interests, setInterests] = useState('');
+    const [pendingReviews, setPendingReviews] = useState([]);
 
+    useEffect(() => {
+        // console.log('useEffect');
+        Axios.get('/review')
+        .then((response) => {
+            // console.log('response', response.data);
+            setPendingReviews(response.data);
+        })
+        .catch((err) => {
+            console.log('err', err);
+        })
+    }, []);
 
     const handleChange = (e) => {
         if (e.target.name === 'name') {
@@ -29,7 +42,9 @@ const RequestForm = () => {
         }
     }
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.PreventDefault(e);
+        
         Axios.get('/reviewOne', {
             params: {
                 restaurant: restaurant
@@ -112,6 +127,7 @@ const RequestForm = () => {
                     <Button variant="outline-light" id="submit" onClick={handleSubmit}>Submit Request</Button>
                 </div>
             </form>
+            <PendingReviews pendingReviews={pendingReviews}/>
         </div>
     )
 }
