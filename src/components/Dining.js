@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import CardDeck from 'react-bootstrap/CardDeck';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Restaurant from './Restaurant';
 import RequestForm from './RequestForm';
@@ -92,12 +95,27 @@ const Dining = () => {
         if (restaurants.length === 0) {
             return (
                 <div className="form-container">
-                    <p className="no-match">No matches found!  If you would like to submit a request for a review of {searchTerm}, please complete the form below:</p>
+                    <p className="no-match">No matches found!  If you would like to submit a request for a review of {searchTerm}, please complete the form below.</p>
+                    <p>A list of restaurants pending review is listed below the form.  Check out where other foodies are interested in eating.</p>
                     <RequestForm />
                     <h2 className="pending-title">Pending Reviews</h2>
-                    <div className="review-list">
+                    <Container className="review-list">
+                        <Row className="title-row">
+                            <Col sm={6} md={3} lg={3}>
+                                Restaurant Name
+                            </Col>
+                            <Col sm={6} md={3} lg={3} className="extra">
+                                Location
+                            </Col>
+                            <Col sm={0} md={3} lg={3} className="extra">
+                                Dishes to Review
+                            </Col>
+                            <Col sm={0} md={3} lg={3}>
+                                Submitted By
+                            </Col>
+                        </Row>
                         {pendingReviews.map((rev, i) => <PendingReview review={rev} key={i} item={i+1}/>)}
-                    </div>
+                    </Container>
                 </div>
             )
         } else {
@@ -139,11 +157,11 @@ const Dining = () => {
                 </div>
                 <div className="restaurant-button-container">
                     <Button className="filter-button" variant="outline-light" value="All" onClick={handleClick}>All</Button>
-                    <Button className="filter-button" variant="outline-light" value="American" onClick={handleClick}>American</Button>
-                    <Button className="filter-button" variant="outline-light" value="Asian" onClick={handleClick}>Asian</Button>
-                    <Button className="filter-button" variant="outline-light" value="European" onClick={handleClick}>European</Button>
-                    <Button className="filter-button" variant="outline-light" value="Latin" onClick={handleClick}>Latin</Button>
-                    <Button className="filter-button" variant="outline-light" value="BBQ" onClick={handleClick}>BBQ</Button>
+                    <Button className="filter-button extra" variant="outline-light" value="American" onClick={handleClick}>American</Button>
+                    <Button className="filter-button extra" variant="outline-light" value="Asian" onClick={handleClick}>Asian</Button>
+                    <Button className="filter-button extra" variant="outline-light" value="European" onClick={handleClick}>European</Button>
+                    <Button className="filter-button extra" variant="outline-light" value="Latin" onClick={handleClick}>Latin</Button>
+                    <Button className="filter-button extra" variant="outline-light" value="BBQ" onClick={handleClick}>BBQ</Button>
                 </div>
                 <div className="restaurant-search">
                     <div className="search-bar">

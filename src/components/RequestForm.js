@@ -44,7 +44,7 @@ const RequestForm = () => {
     return (
         <div>
             <form className="request-form">
-                <h2>Review Request Form</h2>
+                <h2>Review Request</h2>
                 <div className="entry-field">
                     <label className="form-label" htmlFor="name">Your Name: </label>
                     <input className="text-input" id="name" name="name" type="text" onChange={handleChange} placeholder="your name"></input>

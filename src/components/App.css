@@ -490,6 +490,15 @@ h5 {
 
 .review {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.title-row {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: underline;
+    flex-wrap: nowrap;
 }
 
 .review-list {
@@ -503,8 +512,10 @@ h5 {
 }
 
 .review-item {
-    width: 300px;
-    padding-right: 2vw;
+    padding-right: .8em;
+    margin: 1em 0;
+    text-overflow: ellipsis;
+    flex-wrap: nowrap;
 }
 
 /* <------------ Modal ------------> */
@@ -1003,6 +1014,20 @@ h5 {
             columns: 2;
             width: 95vw;
         }
+
+        .review {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .extra {
+            display: none;
+        }
+
+        .text-input,
+        .text-area {
+            width: 15em;
+        }
     }
     
     @media only screen and (max-width: 480px) {
@@ -1136,5 +1161,17 @@ h5 {
         .planning-image-container {
             flex-direction: column;
             align-items: center;
+        }
+
+        .entry-field {
+            flex-direction: column;
+        }
+
+        .request-form {
+            width: 95vw;
+        }
+
+        .review-list {
+            width: 95vw;
         }
     }
