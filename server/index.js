@@ -72,7 +72,7 @@ app.get('/cuisine', (req, res) => {
             console.log(err);
             res.end();
         } else {
-            console.log('retrieved', data);
+            // console.log('retrieved', data);
             res.send(data);
         }
     })
@@ -121,13 +121,13 @@ app.get('/review', (req, res) => {
 
 app.get('/reviewOne', (req, res) => {
     const { restaurant } = req.query;
+    console.log('res', restaurant);
 
     db.getReview({ restaurant: restaurant }, (err, data) => {
         if (err) {
             console.log('error finding restaurant');
             res.end();
         } else {
-            // console.log('MMMMMMM', data);
             res.send(data)
         }
     })

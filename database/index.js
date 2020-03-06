@@ -67,7 +67,7 @@ const getReviews = ( obj, cb ) => {
 }
 
 const getReview = ( { restaurant }, cb ) => {
-    const regex = new RegExp(["^.*", restaurant, ".*$"].join(""), "i");
+    const regex = new RegExp(["^", restaurant, "$"].join(""), "i");
     Request.find( {restaurant: regex }, (err, review) => {
         if (err) {
             console.log(err);

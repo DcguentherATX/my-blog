@@ -29,9 +29,7 @@ const RequestForm = () => {
         }
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
+    const handleSubmit = () => {
         Axios.get('/reviewOne', {
             params: {
                 restaurant: restaurant
@@ -57,6 +55,11 @@ const RequestForm = () => {
                 console.log(err);
             }) 
         }
+        })
+        .then(() => {
+            const frm = document.getElementsByName('request-form')[0];
+            frm.reset();
+            return false
         })
         .catch((err) => {
             console.log('checking db for req error', err);
@@ -87,7 +90,7 @@ const RequestForm = () => {
 
     return (
         <div>
-            <form className="request-form">
+            <form className="request-form" name="request-form">
                 <h2>Review Request</h2>
                 <div className="entry-field">
                     <label className="form-label" htmlFor="name">Your Name: </label>
@@ -106,7 +109,7 @@ const RequestForm = () => {
                     <textarea className="text-area" id="interests" name="interests" wrap="soft" maxLength="500em" onChange={handleChange} placeholder="enter dishes to review"></textarea>
                 </div>
                 <div className="button-container">
-                    <Button variant="outline-light" id="submit" onClick={handleSubmit} disabled>Submit Request</Button>
+                    <Button variant="outline-light" id="submit" onClick={handleSubmit}>Submit Request</Button>
                 </div>
             </form>
         </div>
