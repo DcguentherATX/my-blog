@@ -1020,6 +1020,10 @@ h5 {
             flex-direction: row;
         }
 
+        .request-form {
+            width: 95vw;
+        }
+
         .extra {
             display: none;
         }

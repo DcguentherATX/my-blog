@@ -107,13 +107,27 @@ app.post('/review', (req, res) => {
 })
 
 app.get('/review', (req, res) => {
-    // console.log('review search');
+    // console.log('review search', req);
     db.getReviews({}, (err, data) => {
         if (err) {
             console.log('error in server for reviews');
             res.end();
         } else {
             // console.log('reviews searched');
+            res.send(data)
+        }
+    })
+})
+
+app.get('/reviewOne', (req, res) => {
+    const { restaurant } = req.query;
+
+    db.getReview({ restaurant: restaurant }, (err, data) => {
+        if (err) {
+            console.log('error finding restaurant');
+            res.end();
+        } else {
+            // console.log('MMMMMMM', data);
             res.send(data)
         }
     })

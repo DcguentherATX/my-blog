@@ -66,6 +66,17 @@ const getReviews = ( obj, cb ) => {
     })
 }
 
+const getReview = ( { restaurant }, cb ) => {
+    const regex = new RegExp(["^.*", restaurant, ".*$"].join(""), "i");
+    Request.find( {restaurant: regex }, (err, review) => {
+        if (err) {
+            console.log(err);
+        } else {
+            cb(null, review);
+        }
+    })
+}
+
 const getRestaurants = (obj, cb) => {
     Restaurants.find(obj, (err, restaurants) => {
         if (err) {
@@ -102,4 +113,4 @@ const searchRestaurants = ({ name }, cb) => {
 
 // seedDatabase(restaurants);
 
-module.exports = { getRestaurants, getCuisine, searchRestaurants, createRequest, getReviews };
+module.exports = { getRestaurants, getCuisine, searchRestaurants, createRequest, getReviews, getReview };

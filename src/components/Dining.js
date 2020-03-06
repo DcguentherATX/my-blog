@@ -95,7 +95,7 @@ const Dining = () => {
         if (restaurants.length === 0) {
             return (
                 <div className="form-container">
-                    <p className="no-match">No matches found!  If you would like to submit a request for a review of {searchTerm}, please complete the form below.</p>
+                    <p className="no-match">No matches found!  If you would like to submit a request for a review of a restaurant, please complete the form below.</p>
                     <p>A list of restaurants pending review is listed below the form.  Check out where other foodies are interested in eating.</p>
                     <RequestForm />
                     <h2 className="pending-title">Pending Reviews</h2>
