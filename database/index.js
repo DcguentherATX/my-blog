@@ -45,13 +45,14 @@ const seedDatabase = (data) => {
     })
 }
 
-const createRequest = ( {review} ) => {
-    // console.log('db review', review);
-    Request.create(review, (err) => {
+const createRequest = ( {review}, cb ) => {
+    // console.log('db review entry', review);
+    Request.create(review, (err, reviews) => {
         if (err) {
             console.log('req err', err);
         } else {
             console.log('req success');
+            cb(null, reviews);
         }
     });
 }

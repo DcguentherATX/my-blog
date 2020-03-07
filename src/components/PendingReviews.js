@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PendingReview from './PendingReview';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Axios from 'axios';
 
 const PendingReviews = ( {pendingReviews }) => {
     // console.log(props);

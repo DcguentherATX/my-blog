@@ -94,13 +94,14 @@ app.get('/restaurantSearch', (req, res) => {
 
 app.post('/review', (req, res) => {
     const { params } = req.body;
+    // console.log('going to add entry to database:', params);
 
     db.createRequest({review: params}, (err, data) => {
         if (err) {
             console.log(err);
             res.end();
         } else {
-            console.log('request received');
+            // console.log('response from post in db', data);
             res.send(data);
         }
     })
@@ -110,7 +111,7 @@ app.get('/review', (req, res) => {
     // console.log('review search', req);
     db.getReviews({}, (err, data) => {
         if (err) {
-            console.log('error in server for reviews');
+            // console.log('error in server for reviews');
             res.end();
         } else {
             // console.log('reviews searched');
@@ -121,13 +122,14 @@ app.get('/review', (req, res) => {
 
 app.get('/reviewOne', (req, res) => {
     const { restaurant } = req.query;
-    console.log('res', restaurant);
+    // console.log('checking if pending request exists for:', restaurant);
 
     db.getReview({ restaurant: restaurant }, (err, data) => {
         if (err) {
             console.log('error finding restaurant');
             res.end();
         } else {
+            // console.log('pending review found', restaurant);
             res.send(data)
         }
     })
